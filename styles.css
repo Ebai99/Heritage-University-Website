@@ -1,0 +1,484 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(255, 160, 0, 0.2);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: rgb(1, 1, 50);
+  font-family: "playfair Display";
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 1);
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+
+.first-header {
+  text-align: center;
+  padding: 5px 0px;
+  background-color: rgb(1, 1, 50);
+}
+
+.first-header h1 {
+  font-size: 35px;
+  color: rgb(255, 160, 0);
+  padding-bottom: 2px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.first-header h5 {
+  color: white;
+}
+
+.first-header img {
+  width: 50px;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  vertical-align: middle;
+}
+
+.second-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 160, 0, 1);
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.nav-bar ul {
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar ul li {
+  list-style-type: none;
+}
+
+.nav-bar ul li a {
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(1, 1, 50);
+  padding: 18px 15px;
+  transition: background-color 0.1s;
+}
+
+.nav-bar ul li a:hover {
+  background-color: white;
+}
+
+.nav-bar ul li a:active {
+  opacity: 0.5;
+}
+
+.nav-bar ul li a.active {
+  background-color: black;
+  color: rgb(255, 160, 0);
+}
+
+.second-header input {
+  padding: 16px;
+  outline: none;
+  border: none;
+  border-top: 1px solid rgb(255, 160, 0);
+  background-color: rgba(1, 1, 50, 1);
+  width: 250px;
+  font-size: 16px;
+  color: white;
+}
+
+.first-section {
+  height: 400px;
+  background-image: linear-gradient(rgba(1, 1, 50, 0.7), rgba(1, 1, 50, 0.3)), url(/images/background-copy.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: relative;
+}
+
+.school-accredition {
+  display: inline-block;
+  position: center;
+}
+
+.school-accredition p {
+  font-weight: bold;
+}
+
+.school-accredition span {
+  font-size: 30px;
+  color: white;
+  display: block;
+  font-family: "Playfair Display", Georgia, 'Times New Roman', Times, serif;
+  background-color: rgba(1, 1, 50, 0.9);
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.first-section .peace-message {
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  width: 50%;
+  color: white;
+  text-align: left;
+  font-family: "Playfair Display", Georgia, 'Times New Roman', Times, serif;
+  font-size: 45px;
+  background-color: rgba(1, 1, 50, 0.9);
+  padding: 16px;
+  border-radius: 5px;
+}
+
+.second-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 50px 50px 50px;
+}
+
+.welcome {
+  width: 30%;
+  height: 350px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.welcome h2 {
+  color: rgb(255, 160, 0);
+  background-color: rgba(1, 1, 50, 1);
+  margin-bottom: 5px;
+  padding: 10px 0px;
+  border-radius: 0px 0px 5px 5px;
+  text-align: center;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.welcome p {
+  text-align: center;
+  font-style: italic;
+  font-size: 22px;
+  position: absolute;
+  margin: 10px 20px;
+}
+
+.welcome img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 8px;
+}
+
+.page-title {
+  font-size: 35px;
+  text-align: center;
+  color: rgb(1, 1, 50);
+  background-color: rgb(255, 160, 0);
+  padding: 7px 0px;
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 1);
+  margin-bottom: 12px;
+}
+
+.why-us {
+  margin: 0px 50px 50px 50px;
+}
+
+.why-us-message  {
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.why-us-message ul {
+  list-style-type: circle;
+  list-style-position: inside;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.why-us-pics {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.why-us-pics img {
+  width: 23%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.programs {
+  margin: 0px 50px 50px 50px;
+}
+
+.programs-intro {
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+
+.programs-intro p {
+  font-size: 22px;
+  width: 50%;
+  margin: 0 auto;
+  line-height: 1.5;
+  line-height: 30px;
+  text-align: center;
+  color: black;
+}
+
+.main-programs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-programs {
+  width: 23%;
+  padding: 10px 20px;
+  border-radius: 0px 0px 5px 5px;
+  background-color: rgba(255, 255, 255, 1);
+  background-image: linear-gradient(rgba(1, 1, 50, 0), rgba(1, 1, 50, 1));
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.our-programs h2 {
+  color: rgb(255, 160, 0);
+  background-color: rgba(1, 1, 50, 1);
+  margin-bottom: 5px;
+  padding: 5px 0px;
+  border-radius: 0px 0px 5px 5px;
+  text-align: center;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.our-programs img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.our-programs ul li {
+  list-style-type: none;
+  padding: 5px 0px;
+}
+
+.our-programs ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  transition: font-size 0.2s;
+  display: block;
+}
+
+.our-programs ul li a:hover {
+  color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+}
+
+.learn-more {
+  background-color: rgba(255, 160, 0, 0.8);
+  padding: 10px;
+  color: rgb(1, 1, 50);
+  font-size: 16px;
+  text-decoration: none;
+  float: right;
+  transition: background-color 0.1s, color 0.1s;
+}
+
+.learn-more:hover {
+  color: white;
+  background-color: rgba(255, 160, 0, 1);
+}
+
+.fields-of-study {
+  margin: 0px 50px 50px 50px;
+}
+
+.about-us {
+  margin: 0px 50px 50px 50px;
+}
+
+.about-us h2 {
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.our-staffs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.our-staffs img {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.our-staffs #founder {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+
+.our-staffs div {
+  text-align: center;
+}
+
+.our-culture {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  background-color: rgba(255, 160, 0, 1);
+  padding: 10px 20px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.culture-boxes {
+  width: 30%;
+  font-family: "Playfair Display";
+  font-size: 21px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.culture-boxes img {
+  width: 100%;
+  height: 270px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.our-partners {
+  display: flex;
+  justify-content: space-between;
+}
+
+.partner-boxes {
+  width: 20%;
+  text-align: center;
+}
+
+.partner-boxes img {
+  width: 150px;
+  height: 150px;
+  border-radius: 75%;
+}
+
+footer {
+  padding: 20px 20px;
+  background-color: rgb(1, 1, 50);
+  color: rgba(255, 160, 0, 1);
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ending {
+  width: 250px;
+  line-height: 25px;
+  font-size: 16px;
+}
+
+.ending h2 {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.ending ul li {
+  list-style-type: none;
+}
+
+.ending a {
+  text-decoration: none;
+  color: rgba(255, 160, 0, 0.3);
+}
+
+.ending a:hover {
+  color: rgba(255, 160, 0, 1);
+}
+
+.copyrights {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width:700px) {
+  /* For mobile phones: */
+  .second-section, .why-us, .programs, .fields-of-study, .about-us {
+    margin: 0px 10px 20px 10px;
+  }
+
+  .school-accredition {
+    margin: 0px 10px;
+  }
+
+  .school-accredition span {
+    font-size: 24px;
+    display: block;
+  }
+
+  .first-section {
+    position: relative;
+  }
+
+  .first-section .peace-message {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    width: 90%;
+  }
+
+  .second-section, .main-programs, .our-staffs, .our-culture, .our-partners, .foot {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .welcome, .our-programs {
+    margin-bottom: 10px;
+  }
+
+  .why-us-pics {
+    overflow: hidden;
+  }
+
+  .why-us-pics img {
+    width: 40%;
+    margin: 0px 10px 0px 0px;
+  }
+
+  .welcome, .our-programs, .our-programs img {
+    width: 100%;
+  }
+
+  .foot {
+    align-items: flex-start;
+  }
+}
+
+@media only screen and (max-width:1080px) {
+  /* For Tablets */
+
+}
