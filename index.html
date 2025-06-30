@@ -1,301 +1,477 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Heritage University</title>
-  <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-</head>
-<body>
-  <!-- HEADER SECTION-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heritage University</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!--First Header-->
-  <div class="first-header">
-    <h1>HERITAGE <img src="/images/logo.jpg" alt="LOGO"> UNIVERSITY</h1>
-    <h5>HIGHER INSTITUTE OF PEACE AND DEVELOPMENT STUDIES</h5>
-  </div>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- HEADER SECTION-->
 
-  <!--Second Header-->
-  <div class="second-header">
-    <nav class="nav-bar">
+    <!--First Header-->
+    <div class="first-header">
+      <h1>HERITAGE <img src="/images/logo.jpg" alt="LOGO" /> UNIVERSITY</h1>
+      <p>HIGHER INSTITUTE OF PEACE AND DEVELOPMENT STUDIES</p>
+    </div>
+
+    <!--Second Header-->
+    <div class="second-header">
+      <button id="menu-btn" class="menu-btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <nav class="nav-bar">
+        <ul>
+          <li>
+            <a class="active" href="index.html">Home</a>
+          </li>
+          <li><a href="programs.html">Programs</a></li>
+          <!--  <li><a href="#">Fields <i>of</i> Study</a></li> -->
+          <li><a href="about-us.html">About Us</a></li>
+          <!--  <li><a href="#">Contact Us</a></li> -->
+          <li>
+            <a href="scholarship-opportunities.html"
+              >Scholarship <i>&amp;</i> Opportunities</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div>
+        <button>Apply Now</button>
+        <button>Contact Us</button>
+      </div>
+      <div class="search-bar">
+        <input type="search" placeholder="Search Program..." />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
+
+    <div class="side-bar-menu">
       <ul>
-        <li><a class="active" href="#"><i class="fa fa-fw fa-home"></i>Home</a></li>
-        <li><a href="#">Programs</a></li>
-        <li><a href="#">Fields <i>of</i> Study</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">Scholarship <i>&amp;</i> Opportunities</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="programs.html">Our Programs</a></li>
+        <li><a href="about-us.html">About us</a></li>
+        <li>
+          <a href="scholarship-opportunities.html"
+            >Scholarship &amp; Opportunities</a
+          >
+        </li>
+        <li><a href="">News &amp; Updates</a></li>
       </ul>
-    </nav>
-    <input type="search" placeholder="Search Program...">
-  </div>
+      <p class="close-side-bar"><strong>X</strong></p>
+    </div>
 
-  <!--HOMEPAGE SECTION-->
-  <section class="homepage">
-    <div class="first-section">
+    <!--Third Header: Backgroud picture-->
+    <div class="third-header">
       <div class="school-accredition">
-        <p>ARRETE ORDER No 367/MINEFOP/SG/DFOP/SDGSF/SACD du/of 07 December 2017</p>
-        <span>ONE STUDENT = ONE FREE LAPTOP</span>
-      </div>
-      <div class="peace-message">
-        Building an Emergent Nation with Peace, Work and Progress.
-      </div>
-    </div>
-
-    <div class="second-section">
-      <div class="welcome" class="welcome-text">
-        <h2>OUR FOUNDER</h2>
-        <p id="founder-message">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae impedit modi ipsa placeat dolores unde illo labore commodi rem eaque, voluptatum nam, ducimus quis reiciendis blanditiis nesciunt dicta, quidem soluta.
+        <p>
+          ARRETE ORDER No 367/MINEFOP/SG/DFOP/SDGSF/SACD du/of 07 December 2017
         </p>
+        <span>!!! One Student = One Free Laptop !!!</span>
       </div>
-      <div class="welcome">
-        <img id="heritage-founder" src="images/founder-1.jpg" alt="">
+      <div class="peace-message amh">
+        Building an Emergent Nation through Peace, Work and Progress.
       </div>
-      <div class="welcome" clas="welcome-text">
-        <h2>OUR MISSION</h2>
-        <p id="our-mission">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit maxime perspiciatis, ratione quos, ipsam nemo cum, iste molestiae totam sunt pariatur. Totam repudiandae minima iusto itaque dolor, minus magni impedit?
-        </p>
-      </div>
-    </div>
-  
-    <div class="why-us">
-      <h1 class="page-title">WHY HERITAGE UNIVERSITY?</h1>
-      <div class="why-us-message">
-        <ul>
-          <li>We have <strong>SKILLED</strong> and <strong>QUALIFIED</strong> teachers to ensure the success of all our students.</li>
-          <li>we provide a disciplinary environment for our students, ensuring they become people of high value.</li>
-          <li>We give free laptops to <strong>ALL NEW STUDENTS</strong> upon registration.</li>
-          <li>Our <strong>ICT HUB</strong> provides students with excellent academic results a platform to showcase and improve their technological skills, and also opens them to numerous opportunities both home and <strong>ABROAD</strong>.</li>
-          <li>We are an institution that strongly promotes the practice of <strong>ENTREPRENEURSHIP</strong> amongst our students.</li>
-          <li>Free Wi-Fi on campus.</li>
-        </ul>
-        <div class="why-us-pics">
-          <img src="images/founder-macron.jpg" alt="GALLERY">
-          <img src="images/humanitarian-work.jpg" alt="">
-          <img src="images/mass-communication.jpg" alt="">
-          <img src="images/graduation-2.jpg" alt="">
+      <div class="current-events">
+        <p class="amh">Current Events</p>
+        <div class="events">
+          <p>
+            <span><i class="fa-solid fa-circle-check"></i></span>
+            <span> Heritage Day | 28th June 2025</span>
+          </p>
+          <p>
+            <span><i class="fa-solid fa-circle-check"></i></span>
+            <span>Admission Currently Going On!</span>
+          </p>
         </div>
-      </div>  
-    </div>
-  </section>
-  
-  <!--OUR PROGRAMS SECTION-->
-  <section class="programs">
-    <h1 class="page-title">OUR PROGRAMS</h1>
-    <div class="programs-intro">
-      <p>We offer a variety of programs to suit the needs of our students. Our programs are designed to provide quality education and practical skills that prepare students for the job market.</p>
-    </div>
-    
-    <div class="main-programs">
-      <div id="HPD" class="our-programs">
-        <h2>HPD</h2>
-        <img src="images/humanitarian-1.jpg" alt=""><br>
-        <ul>
-          <li><a href="#">COMPUTER ENGINEERING</a></li>
-          <li><a href="#">ELECTRICAL ENGINEERING</a></li>
-          <li><a href="#">MECHANICAL ENGINEERING</a></li>
-          <li><a href="#">CIVIL ENGINEERING</a></li>
-          <li><a href="#">AGRICULTURE</a></li>
-          <li><a href="#">LOGISTICS AND TRANSPORT MANAGEMENT</a></li>
-          <!--<li><a href="#">PROJECT MANAGEMENT</a></li>
-          <li><a href="#">JOURNALISM AND MASS COMMUNICATION</a></li>-->
-        </ul><br>
-        <a href="#" class="learn-more">Learn More +</a>
-      </div>
-
-      <div id="HND" class="our-programs">
-        <h2>HND</h2>
-        <img src="images/mass-communication.jpg" alt=""><br>
-        <ul>
-          <li><a href="#">COMPUTER ENGINEERING</a></li>
-          <li><a href="#">ELECTRICAL ENGINEERING</a></li>
-          <li><a href="#">MECHANICAL ENGINEERING</a></li>
-          <li><a href="#">CIVIL ENGINEERING</a></li>
-          <li><a href="#">AGRICULTURE</a></li>
-          <li><a href="#">LOGISTICS AND TRANSPORT MANAGEMENT</a></li>
-          <li><a href="#">PROJECT MANAGEMENT</a></li>
-          <li><a href="#">JOURNALISM AND MASS COMMUNICATION</a></li>
-        </ul><br>
-        <a href="#" class="learn-more">Learn More +</a>
-      </div>
-
-      <div id="DEGREE" class="our-programs">
-        <h2>DEGREE</h2>
-        <img src="images/graduation.jpg" alt=""><br>
-        <ul>
-          <li><a href="#">COMPUTER ENGINEERING</a></li>
-          <li><a href="#">ELECTRICAL ENGINEERING</a></li>
-          <li><a href="#">MECHANICAL ENGINEERING</a></li>
-          <li><a href="#">CIVIL ENGINEERING</a></li>
-          <li><a href="#">AGRICULTURE</a></li>
-          <li><a href="#">LOGISTICS AND TRANSPORT MANAGEMENT</a></li>
-          <li><a href="#">PROJECT MANAGEMENT</a></li>
-          <li><a href="#">JOURNALISM AND MASS COMMUNICATION</a></li>
-        </ul><br>
-        <a href="#" class="learn-more">Learn More +</a>
-      </div>
-
-      <div id="MASTERS" class="our-programs">
-        <h2>MASTERS</h2>
-        <img src="images/graduation.jpg" alt=""><br>
-        <ul>
-          <li><a href="#">COMPUTER ENGINEERING</a></li>
-          <li><a href="#">ELECTRICAL ENGINEERING</a></li>
-          <li><a href="#">MECHANICAL ENGINEERING</a></li>
-          <li><a href="#">CIVIL ENGINEERING</a></li>
-          <li><a href="#">AGRICULTURE</a></li>
-          <li><a href="#">LOGISTICS AND TRANSPORT MANAGEMENT</a></li>
-          <li><a href="#">PROJECT MANAGEMENT</a></li>
-          <li><a href="#">JOURNALISM AND MASS COMMUNICATION</a></li>
-        </ul><br>
-        <a href="#" class="learn-more">Learn More +</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="fields-of-study">
-    <h1 class="page-title">FIELDS <i>of</i> STUDY</h1>
-
-  </section>
-
-  <section class="about-us">
-    <h1 class="page-title">ABOUT US</h1>
-    <h2>OUR STAFFS</h2>
-    <div class="our-staffs">
-      <div>
-        <img id="founder" src="images/founder-pic.jpg" alt=""><br>
-        <p>
-          Prof. Dze Ngwah<br>
-          Founder and Director
-        </p>
-      </div>
-      <div>
-        <img src="images/founder-pic.jpg" alt=""><br>
-        <p>
-          Prof. Dze Ngwah<br>
-          Founder and Director
-        </p>
-      </div>
-      <div>
-        <img src="images/founder-pic.jpg" alt=""><br>
-        <p>
-          Prof. Dze Ngwah<br>
-          Founder and Director
-        </p>
-      </div>
-      <div>
-        <img src="images/founder-pic.jpg" alt=""><br>
-        <p>
-          Prof. Dze Ngwah<br>
-          Founder and Director
-        </p>
-      </div>
-      <div>
-        <img src="images/founder-pic.jpg" alt=""><br>
-        <p>
-          Prof. Dze Ngwah<br>
-          Founder and Director
-        </p>
       </div>
     </div>
 
-    <h2>OUR CULTURE</h2>
-    <div class="our-culture">
-      <div class="culture-boxes">
-        <p>ONE STUDENT &equals; ONE LAPTOP</p>
-        <img src="images/one-student-one-laptop.jpg" alt="One Student One Laptop">
-      </div>
-      <div class="culture-boxes">
-        <p>CULTURAL WEEK</p>
-        <img src="images/cultural-week.jpg" alt="Cultural Week">
-      </div>
-      <div class="culture-boxes">
-        <p>GRADUATION AND MATRICULATION</p>
-        <img src="images/graduation.jpg" alt="Gradauation and Matriculation">
-      </div>
-    </div>
+    <!--MAIN SECTION-->
+    <section class="main1">
+      <section class="welcome">
+        <div class="wel-intro">
+          <!--welcome intro-->
+          <p class="section-title">Welcome to Heritage University</p>
+          <div class="wel-img">
+            <img src="/images/founder-macron.jpg" alt="welcome pictures" />
+            <p id="img-desc">Our founder with H.E. Emmanuel Macron</p>
+          </div>
+        </div>
 
-    <h2>OUR PARTNERS</h2>
-    <div class="our-partners">
-      <div class="partner-boxes">
-        <img src="images/one-student-one-laptop.jpg" alt="One Student One Laptop"><br>
-        <p>DICKINSON UNIVERSITY PENYSLAVANIA USA</p>
-      </div>
-      <div class="partner-boxes">
-        <img src="images/one-student-one-laptop.jpg" alt="One Student One Laptop"><br>
-        <p>UNIVERSITY OF MAROUA</p>
-      </div>
-      <div class="partner-boxes">
-        <img src="images/one-student-one-laptop.jpg" alt="One Student One Laptop"><br>
-        <p>UNIVERSITY OF BAMENDA</p>
-      </div>
-      <div class="partner-boxes">
-        <img src="images/one-student-one-laptop.jpg" alt="One Student One Laptop"><br>
-        <p>HALLE and CO LAW FIRM</p>
-      </div>
-      <div class="partner-boxes">
-        <img src="images/one-student-one-laptop.jpg" alt="One Student One Laptop"><br>
-        <p>NFC BANK CAMEROON</p>
-      </div>
-    </div>
-  </section>
+        <article class="mission-vision">
+          <div class="lts">
+            <!--letter to students-->
+            <p class="article-title">Dear Students/Parents</p>
+            <p class="message">
+              It is with great pride that I welcome you to Heritage University
+              Institute, a place dreams are nurtured and futures are shaped.<br />
+              To our current students: your dedication inspires us.<br />
+              To our future scholars: We eagerly await your potential.<br />
+              To parents: your trust fuels our commitment to excellence.<br />
+              Together, we uphold a tradition of
+              <em>peace, knowledge, integrity</em> and
+              <em>transformative growth.</em> Let us continue building a legacy
+              that empowers generations.<br /><br />
+              <span class="name-of-founder">Prof. Willibroad Dze-Ngwa</span>
+            </p>
+          </div>
+          <div>
+            <p class="article-title">Our Mission/Vision</p>
+            <p class="message">
+              Heritage University Institute is dedicated to empowering students
+              through quality education, fostering academic excellence,
+              leadership, and ethical values to nurture lifelong learners who
+              contribute meaningfully to the society.<br />
+              We strive to be a premier institution recognized for innovation,
+              peace building, and transformative education, shaping future
+              leaders who drive positive change in a globalized world.
+            </p>
+          </div>
+        </article>
+      </section>
 
-  <footer>
-    <div class="foot">
-      <div class="ending">
-        <h2>Our Programs</h2>
-        <ul>
-          <li><a href="#">HPD</a></li>
-          <li><a href="#">HND</a></li>
-          <li><a href="#">Degree</a></li>
-          <li><a href="#">MASTERS</a></li>
-        </ul>
+      <section class="why-us">
+        <p class="page-title">Why Heritage University?</p>
+        <div class="wuc">
+          <div class="wuc1">
+            <p>
+              <span><i class="fa-solid fa-circle-check"></i></span>
+              <span
+                ><strong>Skilled</strong> and
+                <strong>qualified</strong> staff.</span
+              >
+            </p>
+            <p>
+              <span><i class="fa-solid fa-circle-check"></i></span>
+              <span
+                ><strong>Free</strong> laptops to all newly registerred
+                students.</span
+              >
+            </p>
+            <p>
+              <span><i class="fa-solid fa-circle-check"></i></span>
+              <span
+                >Affordable tuition. Payments can be made in installments.</span
+              >
+            </p>
+            <p>
+              <span><i class="fa-solid fa-circle-check"></i></span>
+              <span
+                >A <strong>vibrant</strong> and <strong>dynamic</strong> ICT HUB
+                exposes students to real-world challenges and
+                opportunities.</span
+              >
+            </p>
+            <p>
+              <span><i class="fa-solid fa-circle-check"></i></span>
+              <span
+                >Numerous <strong>scholarship opportunities</strong> with
+                foreign partners.</span
+              >
+            </p>
+          </div>
+
+          <div class="wuc2">
+            <p class="amh">We are a Springboard to Excellence</p>
+            <p>
+              Breaking barriers to education through peace, and empowering
+              students through entrepreneurship and technology for an emergent
+              nation.
+            </p>
+          </div>
+        </div>
+        <div class="img">
+          <img src="images/humanitarian-work.jpg" alt="" />
+          <img src="images/mass-communication.jpg" alt="" />
+          <img src="images/one-student-one-laptop.jpg" alt="" />
+          <img src="images/graduation-2.jpg" alt="" />
+        </div>
+      </section>
+    </section>
+
+    <section class="fields-of-study">
+      <p class="page-title">Fields <i>of</i> Study</p>
+      <div class="fos-main">
+        <div class="fields-of-study-body eng">
+          <p class="amh school-title">School <i>of</i> Engineering</p>
+          <div class="school-of-eng">
+            <!--fos means field of specialization-->
+            <div class="software fos">
+              <img src="images/software-img.avif" alt="" />
+              <div class="description">
+                <p class="article-title">Software Engineering</p>
+                <p>
+                  Develop the skills to create software applications and
+                  systems.
+                </p>
+              </div>
+            </div>
+            <div class="hardware fos">
+              <img src="images/hardware.jpg" alt="" />
+              <div class="description">
+                <p class="article-title">Hardware Engineering</p>
+                <p>
+                  Learn how to design, build, and maintain computer hardware.
+                </p>
+              </div>
+            </div>
+            <div class="electrical fos">
+              <img src="images/electrical-img.avif" alt="" />
+              <div class="description">
+                <p class="article-title">Electrical Engineering</p>
+                <p>
+                  Design, develop, and maintain electrical systems and
+                  components.
+                </p>
+              </div>
+            </div>
+            <div class="mechanical fos">
+              <img src="images/mechanical-engineering.jpg" alt="" />
+              <div class="description">
+                <p class="article-title">Mechanical Engineering</p>
+                <p>
+                  Acquire the knowledge of designing, building, and maintaining
+                  mechanical systems.
+                </p>
+              </div>
+            </div>
+            <div class="civil fos">
+              <img src="images/construction-img.webp" alt="" />
+              <div class="description">
+                <p class="article-title">Civil Engineering</p>
+                <p>
+                  Plan, design, and oversee construction projects including
+                  roads, buildings and bridges.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="learn-more">
+          <a href="programs.html">Learn more</a>
+        </div>
+
+        <div class="fields-of-study-body business">
+          <p class="amh school-title">
+            School <i>of</i> Business &amp; Finance
+          </p>
+          <div class="school-of-eng">
+            <!--fos means field of specialization-->
+            <div class="software fos">
+              <img src="images/accounting-pic.jpeg" alt="" />
+              <div class="description">
+                <p class="article-title">Accounting</p>
+                <p>
+                  Develop the skills to create software applications and
+                  systems.
+                </p>
+              </div>
+            </div>
+            <div class="hardware fos">
+              <img src="images/logistic-background.jpg" alt="" />
+              <div class="description">
+                <p class="article-title">Logistics and Transport Management</p>
+                <p>
+                  Learn how to design, build, and maintain computer hardware.
+                </p>
+              </div>
+            </div>
+            <div class="electrical fos">
+              <img src="images/logistics-img.avif" alt="" />
+              <div class="description">
+                <p class="article-title">Project Planning and Management</p>
+                <p>
+                  Design, develop, and maintain electrical systems and
+                  components.
+                </p>
+              </div>
+            </div>
+            <div class="mechanical fos">
+              <img src="images/journalism.jpg" alt="" />
+              <div class="description">
+                <p class="article-title">Journalism and Mass Communication</p>
+                <p>
+                  Acquire the knowledge of designing, building, and maintaining
+                  mechanical systems.
+                </p>
+              </div>
+            </div>
+            <div class="civil fos">
+              <img src="images/agri-background.jpg" alt="" />
+              <div class="description">
+                <p class="article-title">Agriculture</p>
+                <p>
+                  Plan, design, and oversee construction projects including
+                  roads, buildings and bridges.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="learn-more">
+          <a href="programs.html">Learn more</a>
+        </div>
       </div>
-      
-      <div class="ending">
-        <h2>Fields <i>of</i> Study</h2>
-        <ul>
-          <li><a href="#">COMPUTER ENGINEERING</a></li>
-          <li><a href="#">ELECTRICAL ENGINEERING</a></li>
-          <li><a href="#">MECHANICAL ENGINEERING</a></li>
-          <li><a href="#">CIVIL ENGINEERING</a></li>
-          <li><a href="#">AGRICULTURE</a></li>
-          <li><a href="#">LOGISTICS AND TRANSPORT MANAGEMENT</a></li>
-          <li><a href="#">PROJECT MANAGEMENT</a></li>
-          <li><a href="#">JOURNALISM AND MASS COMMUNICATION</a></li>
-        </ul>
+    </section>
+
+    <section class="p-n">
+      <div class="p-container">
+        <div class="partners">
+          <p class="amh">Our Partners</p>
+          <div class="our-partners">
+            <div class="partner-boxes">
+              <img
+                src="images/Dickinson_College.svg.png"
+                alt="One Student One Laptop"
+              /><br />
+              <p>DICKINSON UNIVERSITY PENYSLAVANIA USA</p>
+            </div>
+            <div class="partner-boxes">
+              <img
+                src="images/UMaroua-logo.png"
+                alt="One Student One Laptop"
+              /><br />
+              <p>UNIVERSITY OF MAROUA</p>
+            </div>
+            <div class="partner-boxes">
+              <img
+                src="images/UBa-logo.jpg"
+                alt="One Student One Laptop"
+              /><br />
+              <p>UNIVERSITY OF BAMENDA</p>
+            </div>
+            <div class="partner-boxes">
+              <img
+                src="images/Nico-Halle-logo.png"
+                alt="One Student One Laptop"
+              /><br />
+              <p>NICO-HALLE &amp; CO LAW FIRM</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <!--send us a message-->
+          <p class="amh">Contact Us</p>
+          <form action="/submit" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
       </div>
 
-      <div class="ending">
-        <h2>Our Contacts</h2>
-        <p>(+237) 677-777-177<br>(+237) 699-009-988</p>
-        <p><a href="mailto:heritage-uni@gmail.com">Email: heritage-uni@gmail.com</a></p>
+      <div class="news">
+        <p class="amh">News &AMP; Updates</p>
+        <div class="news-boxes">
+          <span class="event-img">
+            <img src="images/background-2.jpg" alt="" />
+          </span>
+          <div>
+            <p class="article-title">Admission currently going on</p>
+            <p>Deadline: 04th September 2025</p>
+            <button class="apply-now">Apply Now</button>
+          </div>
+        </div>
+        <div class="news-boxes">
+          <span class="event-img">
+            <img src="images/background-2.jpg" alt="" />
+          </span>
+          <div>
+            <p class="article-title">Heritage Day</p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
+              delectus, officiis omnis, nihil placeat ipsa atque voluptates
+              neque ab corporis alias consectetur, optio itaque? Quae nulla
+              ullam dolore quas eius.
+            </p>
+            <br />
+            <p>Venue: Heriatge Campus</p>
+            <p>Date: 28th June 2025</p>
+          </div>
+        </div>
+        <div class="news-boxes">
+          <span class="event-img">
+            <img src="images/humanitarian-work.jpg" alt="" />
+          </span>
+          <div>
+            <p class="article-title">Clean-up Campaign</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+              veritatis ex est similique dolore autem expedita a in natus
+              eligendi ipsam, numquam accusantium architecto illum accusamus
+              qui? Vero, exercitationem commodi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="foot">
+        <div class="ending">
+          <p class="article-title">Quick Links</p>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="programs.html">Our Programs</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="scholarship-opportunities.html">Scholarship</a></li>
+            <li><a href="#">News &amp; Updates</a></li>
+          </ul>
+        </div>
+
+        <div class="ending">
+          <p class="article-title">Our Contacts</p>
+          <p>(+237) 677-777-177<br />(+237) 699-009-988</p>
+          <p>
+            Email: <a href="mailto:hehipeds@gmail.com">hehipeds@gmail.com</a>
+          </p>
+        </div>
+
+        <div class="ending">
+          <p class="article-title">Follow Us</p>
+          <p>Facebook: <a href="#">Heritageforpeace</a></p>
+          <p>Twitter: <a href="#">@HeritageUni</a></p>
+          <p>Instagram: <a href="#">@heritage_university</a></p>
+        </div>
+
+        <div class="ending">
+          <p class="article-title">Our Campuses</p>
+          <p>WUM Campus: Opposite the Court of First Instance</p>
+          <p>YAOUNDE Campus: Biyem-Assi, opposite Boulangerie Francaise</p>
+        </div>
       </div>
 
-      <div class="ending">
-        <h2>Follow Us</h2>
-        <p>Facebook: <a href="#">Heritage University</a></p>
-        <p>Twitter: <a href="#">@HeritageUni</a></p>
-        <p>Instagram: <a href="#">@heritage_university</a></p>
+      <div class="copyrights">
+        <p>&copy; copyrights reserved 2025</p>
+        <p>Heritage University</p>
       </div>
-
-      <div class="ending">
-        <h2>Our Campuses</h2>
-        <p>WUM Campus: Opposite the Catholic Church</p>
-        <p>YAOUNDE Campus: Biyem-Assi, opposite Boulangerie Francaise</p>
-      </div>
-    </div>
-    
-    <div class="copyrights">
-      <p>&copy; copyrights reserved 2025</p>
-      <p>Heritage University</p>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
