@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apply Now</title>
     <link rel="stylesheet" href="/CSS/styles.css" />
     <link rel="stylesheet" href="/CSS/styles-1.css" />
+    <link rel="stylesheet" href="/CSS/styles-2.css" />
+    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,7 +26,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>About Us</title>
   </head>
   <body>
     <!-- HEADER SECTION-->
@@ -49,7 +51,7 @@
         <div class="main-links">
           <a href="index.html">Home</a>
           <a href="programs.html">Programs</a>
-          <a class="active" href="about-us.html">About Us</a>
+          <a href="about-us.html">About Us</a>
           <a href="scholarship-opportunities.html"
             >Scholarship&nbsp;<i>&amp;</i>&nbsp;Opportunities</a
           >
@@ -109,118 +111,121 @@
     </nav>
 
     <section class="hero">
-      <p class="hero-title">About Us</p>
+      <p class="hero-title">Apply Now</p>
       <p class="title-intro">
-        Heritage University Institute is committed to academic excellence, peace
-        building, leadership, and community impact. Our diverse progarms, rich
-        culture, and competent staff helps cultivate our students into future
-        leaders.
+        We offer a variety of programs to suit the needs of our students. Our
+        programs are designed to provide quality education and practical skills
+        that prepare students for the job market.
       </p>
     </section>
 
-    <section class="about-us">
-      <h2>OUR STAFFS</h2>
-      <div class="our-staffs">
-        <div>
-          <img id="founder" src="images/founder-2.jpg" alt="" /><br />
-          <p>
-            Prof. Willibroad Dze-Ngwa<br />
-            Founder and Director
-          </p>
-        </div>
-        <div>
-          <img src="images/founder-2.jpg" alt="" /><br />
-          <p>
-            Prof. Willibroad Dze-Ngwa<br />
-            Founder and Director
-          </p>
-        </div>
-        <div>
-          <img src="images/founder-2.jpg" alt="" /><br />
-          <p>
-            Prof. Willibroad Dze-Ngwa<br />
-            Founder and Director
-          </p>
-        </div>
-        <div>
-          <img src="images/founder-2.jpg" alt="" /><br />
-          <p>
-            Prof. Willibroad Dze-Ngwa<br />
-            Founder and Director
-          </p>
-        </div>
-        <div>
-          <img src="images/founder-2.jpg" alt="" /><br />
-          <p>
-            Prof. Willibroad Dze-Ngwa<br />
-            Founder and Director
-          </p>
-        </div>
-      </div>
+    <!-- Form -->
 
-      <h2>OUR CULTURE</h2>
-      <div class="our-culture">
-        <div class="culture-boxes">
-          <img
-            src="images/one-student-one-laptop.jpg"
-            alt="One Student One Laptop"
-          />
-          <div class="desc">
-            <p>ONE STUDENT &equals; ONE LAPTOP</p>
-          </div>
-        </div>
-        <div class="culture-boxes">
-          <img src="images/out-door-edu2.jpg" alt="OUT DOOR EDUCATION" />
-          <div class="desc">
-            <p>OUT DOOR EDUCATION</p>
-          </div>
-        </div>
-        <div class="culture-boxes">
-          <img src="images/cultural-week.jpg" alt="Cultural Week" />
-          <div class="desc">
-            <p>CULTURAL WEEK</p>
-          </div>
-        </div>
-        <div class="culture-boxes">
-          <img
-            src="images/graduation.jpg"
-            alt="Gradauation and Matriculation"
-          />
-          <div class="desc">
-            <p>GRADUATION &amp; MATRICULATION</p>
-          </div>
-        </div>
-      </div>
+    <form class="apply-now-form" action="">
+      <fieldset class="program">
+        <legend>Program Of Studies</legend>
+        <input
+          type="radio"
+          id="hnd"
+          name="program-of-studies"
+          onclick="showFieldset('HND')"
+        />
+        <label for="hnd" onclick="showFieldset('HND')">
+          HND (Higher National Diploma)</label
+        ><br />
+        <input
+          type="radio"
+          id="degree"
+          name="program-of-studies"
+          onclick="showFieldset('bachelor')"
+        />
+        <label for="degree" onclick="showFieldset('bachelor')"> Degree</label
+        ><br />
+        <input
+          type="radio"
+          id="masters"
+          name="program-of-studies"
+          onclick="showFieldset('master')"
+        />
+        <label for="masters" onclick="showFieldset('master')"> Masters</label>
+      </fieldset>
 
-      <h2>OUR PARTNERS</h2>
-      <div class="our-partners-au">
-        <div class="partner-boxes-au">
-          <img
-            src="images/Dickinson_College.svg.png"
-            alt="One Student One Laptop"
-          /><br />
-          <p>DICKINSON UNIVERSITY PENYSLAVANIA USA</p>
-        </div>
-        <div class="partner-boxes-au">
-          <img
-            src="images/UMaroua-logo.png"
-            alt="One Student One Laptop"
-          /><br />
-          <p>UNIVERSITY OF MAROUA</p>
-        </div>
-        <div class="partner-boxes-au">
-          <img src="images/UBa-logo.jpg" alt="One Student One Laptop" /><br />
-          <p>UNIVERSITY OF BAMENDA</p>
-        </div>
-        <div class="partner-boxes-au">
-          <img
-            src="images/Nico-Halle-logo.png"
-            alt="One Student One Laptop"
-          /><br />
-          <p>NICO-HALLE &amp; CO LAW FIRM</p>
-        </div>
-      </div>
-    </section>
+      <!-- personal info -->
+      <fieldset class="personal-info form-container">
+        <legend>Personal Information</legend>
+        <input type="text" placeholder="First Name" /><br />
+        <input type="text" placeholder="Middle Name" /><br />
+        <input type="text" placeholder="Last Name" /><br />
+        <input type="text" placeholder="Date of birth" /><br />
+        <input type="text" placeholder="Place of birth" /><br />
+        <input type="text" placeholder="Region of origin" /><br />
+        <select name="sex" id="">
+          <option value="Male">Male</option>
+          <option value="female">Female</option></select
+        ><br />
+        <input type="text" placeholder="E-Mail" /><br />
+        <input type="number" placeholder="Telephone" />
+      </fieldset>
+
+      <!-- HND Document -->
+      <fieldset id="HND" class="school-program form-container active">
+        <legend>HND Requirements</legend>
+        <label for="birth-certificate">Birth Certificate:</label>
+        <input
+          type="file"
+          name="birth-certificate"
+          id="birth-certificate"
+        /><br />
+        <label for="A-level-certificate">Advanced Level Certificate:</label>
+        <input
+          type="file"
+          name="A-level-certificate"
+          id="A-level-certificate"
+        /><br />
+        <label for="id-card">ID Card:</label>
+        <input type="file" name="id-card" id="id-card" />
+      </fieldset>
+
+      <!-- Bachelor's section -->
+      <fieldset id="bachelor" class="school-program form-container">
+        <legend>Bachelors Degree Requirements</legend>
+        <label for="birth-certificate">Birth Certificate:</label>
+        <input
+          type="file"
+          name="birth-certificate"
+          id="birth-certificate"
+        /><br />
+        <label for="A-level-certificate">Advanced Level Certificate:</label>
+        <input
+          type="file"
+          name="A-level-certificate"
+          id="A-level-certificate"
+        /><br />
+        <label for="id-card">ID Card:</label>
+        <input type="file" name="id-card" id="id-card" />
+      </fieldset>
+
+      <!-- master's section -->
+      <fieldset id="master" class="school-program form-container">
+        <legend>Masters Degree Requirements</legend>
+        <label for="birth-certificate">Birth Certificate:</label>
+        <input
+          type="file"
+          name="birth-certificate"
+          id="birth-certificate"
+        /><br />
+        <label for="A-level-certificate">Advanced Level Certificate:</label>
+        <input
+          type="file"
+          name="A-level-certificate"
+          id="A-level-certificate"
+        /><br />
+        <label for="id-card">ID Card:</label>
+        <input type="file" name="id-card" id="id-card" />
+      </fieldset>
+
+      <input type="submit" class="button" />
+    </form>
 
     <footer>
       <div class="foot">
@@ -252,7 +257,7 @@
 
         <div class="ending">
           <p class="article-title">Our Campuses</p>
-          <p>WUM Campus: Opposite the Court of First Instances</p>
+          <p>WUM Campus: Opposite the Court of First Instance</p>
           <p>YAOUNDE Campus: Biyem-Assi, opposite Boulangerie Francaise</p>
         </div>
       </div>

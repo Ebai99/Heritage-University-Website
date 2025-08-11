@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="styles-1.css" />
+    <link rel="stylesheet" href="/CSS/styles.css" />
+    <link rel="stylesheet" href="/CSS/styles-1.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,7 +23,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Our Progarms</title>
+    <title>Our Programs</title>
   </head>
   <body>
     <!-- HEADER SECTION-->
@@ -35,50 +35,78 @@
     </div>
 
     <!--Second Header-->
-    <div class="second-header">
-      <button id="menu-btn" class="menu-btn">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-      <nav class="nav-bar">
-        <ul>
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li><a class="active" href="programs.html">Programs</a></li>
-          <!--  <li><a href="#">Fields <i>of</i> Study</a></li> -->
-          <li><a href="about-us.html">About Us</a></li>
-          <!--  <li><a href="#">Contact Us</a></li> -->
-          <li>
-            <a href="scholarship-opportunities.html"
-              >Scholarship <i>&amp;</i> Opportunities</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <div>
-        <button>Apply Now</button>
-        <button>Contact Us</button>
-      </div>
-      <div class="search-bar">
-        <input type="search" placeholder="Search Program..." />
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </div>
-    </div>
+    <nav class="nav-bar">
+      <input type="checkbox" id="side-bar-check" />
+      <label for="side-bar-check" class="open-side-bar"
+        ><i class="fa-solid fa-bars"></i
+      ></label>
+      <label for="side-bar-check" id="side-bar-overlay"></label>
+      <div class="links-container">
+        <label for="side-bar-check" class="close-side-bar"
+          >X - close menu</label
+        >
 
-    <div class="side-bar-menu">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="programs.html">Our Programs</a></li>
-        <li><a href="about-us.html">About us</a></li>
-        <li>
+        <div class="main-links">
+          <a href="index.html">Home</a>
+          <a class="active" href="programs.html">Programs</a>
+          <a href="about-us.html">About Us</a>
           <a href="scholarship-opportunities.html"
-            >Scholarship &amp; Opportunities</a
+            >Scholarship&nbsp;<i>&amp;</i>&nbsp;Opportunities</a
           >
-        </li>
-        <li><a href="">News &amp; Updates</a></li>
-      </ul>
-      <p class="close-side-bar"><strong>X</strong></p>
-    </div>
+        </div>
+      </div>
+
+      <div class="ac-btn">
+        <a href="apply-now.html" class="apply-now-btn">Apply Now</a>
+
+        <input type="checkbox" id="contact-us-status-active" />
+        <label for="contact-us-status-active" id="contact-us-btn" class="button"
+          >Contact Us</label
+        >
+
+        <label
+          for="contact-us-status-active"
+          class="contact-us-overlay"
+        ></label>
+
+        <div class="contact-form-page">
+          <label for="contact-us-status-active" class="close-contact-us-page"
+            ><i class="fa-solid fa-xmark"></i
+          ></label>
+          <!--send us a message-->
+          <p class="amh">Contact Us</p>
+          <form action="/submit" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <button type="submit" class="button">
+              Send Message on Whatsapp
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="search-bar">
+        <input type="checkbox" id="search-input" />
+        <input
+          type="search"
+          placeholder="Search Program..."
+          class="search-bar-input"
+        />
+        <label for="search-input" class="searching open-search-bar"
+          ><i class="fa-solid fa-magnifying-glass"></i
+        ></label>
+        <label for="search-input" class="searching close-search-bar"
+          ><i class="fa-solid fa-xmark"></i
+        ></label>
+      </div>
+    </nav>
 
     <!--OUR PROGRAMS SECTION-->
 
@@ -91,70 +119,271 @@
       </p>
     </section>
 
+    <section class="program-description">
+      <div class="HND-program">
+        <p class="amh">Higher National Diploma (HND)</p>
+        <p>
+          The Higher National Diploma is a national higher education diploma
+          issued by the Ministry of Higher Education.<br />
+          HND is a <strong>two-year</strong> (three-year for Health Sciences)
+          professional university program focusing on practical skills and
+          knowledge, equivalent to the first two years of a university degree.
+        </p>
+
+        <h3>Requirements for HND Exams</h3>
+        <p>To sit for the HND exam, you'll need:</p>
+        <ul>
+          <li>
+            A complete program of study in an approved institution
+            <strong
+              >(Heriatge Higher Institute of Peace and Development
+              Studies)</strong
+            >
+          </li>
+          <li>
+            A high school leaving certificate (e.g.,GCE Advanced Level,
+            Baccalaureate)
+          </li>
+          <li>Transcripts and Internship reports</li>
+        </ul>
+      </div>
+
+      <div class="degree-masters-program">
+        <div>
+          <p class="amh">DEGREE (B-Tech, BA)</p>
+          <p>
+            Our degree program is a <strong>one-year</strong> program after the
+            HND. It is also referred to as a <strong>top-up</strong> degree
+            program.<br />We offer these programs through our National
+            Affiliated University partners
+            <strong>(University of Bamenda, University of Maroua)</strong>
+          </p>
+        </div>
+        <div>
+          <p class="amh">MASTERS</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="our-schools">
+      <p class="page-title">Our Schools</p>
+      <div class="schools">
+        <div class="school-box">
+          <p class="learn-more more1">
+            <a href="programs.html">See all Programs</a>
+          </p>
+          <img src="images/agriculture-img.avif" alt="" />
+          <div>
+            <p class="school-title amh">School of Engineering</p>
+            <p>
+              Offering programs in computer, electrical, mechanical, and civil
+              engineering.
+            </p>
+            <p class="learn-more more2">
+              <a href="programs.html">See all Programs</a>
+            </p>
+          </div>
+        </div>
+        <div class="school-box">
+          <p class="learn-more more1">
+            <a href="programs.html">See all Programs</a>
+          </p>
+          <img src="images/agriculture-img.avif" alt="" />
+          <div>
+            <p class="school-title amh">
+              School of Business, Finance &amp; Management
+            </p>
+            <p>
+              Specializing in accounting, logistics, project management, and
+              entrepreneurship.
+            </p>
+            <p class="learn-more more2">
+              <a href="programs.html">See all Programs</a>
+            </p>
+          </div>
+        </div>
+        <div class="school-box">
+          <p class="learn-more more1">
+            <a href="programs.html">See all Programs</a>
+          </p>
+          <img src="images/agriculture-img.avif" alt="" />
+          <div>
+            <p class="school-title amh">
+              School of Journalism and Mass Communication
+            </p>
+            <p>
+              Providing a comprehensive education in journalism, media studies,
+              and communication strategies.
+            </p>
+            <p class="learn-more more2">
+              <a href="programs.html">See all Programs</a>
+            </p>
+          </div>
+        </div>
+        <div class="school-box">
+          <p class="learn-more more1">
+            <a href="programs.html">See all Programs</a>
+          </p>
+          <img src="images/agriculture-img.avif" alt="" />
+          <div>
+            <p class="school-title amh">School of Agriculture</p>
+            <p>
+              Focused on sustainable agricultural practices, agribusiness, and
+              rural development.
+            </p>
+            <p class="learn-more more2">
+              <a href="programs.html">See all Programs</a>
+            </p>
+          </div>
+        </div>
+        <div class="school-box">
+          <p class="learn-more more1">
+            <a href="programs.html">See all Programs</a>
+          </p>
+          <img src="images/agriculture-img.avif" alt="" />
+          <div>
+            <p class="school-title amh">School of Health Sciences</p>
+            <p>
+              Offering programs in public health, nursing, and healthcare
+              management.
+            </p>
+            <p class="learn-more more2">
+              <a href="programs.html">See all Programs</a>
+            </p>
+          </div>
+        </div>
+        <div class="school-box">
+          <p class="learn-more more1">
+            <a href="programs.html">See all Programs</a>
+          </p>
+          <img src="images/agriculture-img.avif" alt="" />
+          <div>
+            <p class="school-title amh">
+              School of Education &amp; Professional Development
+            </p>
+            <p>
+              Preparing future educators with a focus on innovative teaching
+              methods and educational leadership.
+            </p>
+            <p class="learn-more more2">
+              <a href="programs.html">See all Programs</a>
+            </p>
+          </div>
+        </div>
+        <div class="school-box">
+          <p class="learn-more more1">
+            <a href="programs.html">See all Programs</a>
+          </p>
+          <img src="images/agriculture-img.avif" alt="" />
+          <div>
+            <p class="school-title amh">
+              School of Peace Studies &amp; Humanitarian Action
+            </p>
+            <p>
+              Dedicated to peacebuilding, conflict resolution, and humanitarian
+              action in local and global contexts.
+            </p>
+            <p class="learn-more more2">
+              <a href="programs.html">See all Programs</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="programs">
+      <p class="page-title">Fields <i>of</i> Study</p>
       <div class="main-programs">
         <div id="HPD" class="our-programs">
           <p class="amh">HPD</p>
           <img src="images/humanitarian-work.jpg" alt="" /><br />
           <ul>
-            <li><a href="#">COMPUTER ENGINEERING</a></li>
-            <li><a href="#">ELECTRICAL ENGINEERING</a></li>
-            <li><a href="#">MECHANICAL ENGINEERING</a></li>
-            <li><a href="#">CIVIL ENGINEERING</a></li>
-            <li><a href="#">AGRICULTURE</a></li>
-            <li><a href="#">LOGISTICS AND TRANSPORT MANAGEMENT</a></li>
-            <!--<li><a href="#">PROJECT MANAGEMENT</a></li>
-            <li><a href="#">JOURNALISM AND MASS COMMUNICATION</a></li>-->
+            <li>
+              COMPUTER ENGINEERING
+              <ul class="psl">
+                <!--psl(program sublist)-->
+                <li>Software Enginnering</li>
+                <li>Hardware Maintenance</li>
+              </ul>
+            </li>
+            <li>ELECTRICAL ENGINEERING</li>
+            <li>MECHANICAL ENGINEERING</li>
+            <li>CIVIL ENGINEERING</li>
+            <li>AGRICULTURE</li>
+            <li>LOGISTICS AND TRANSPORT MANAGEMENT</li>
+            <!--<li><PROJECT MANAGEMENT</li>
+            <li>JOURNALISM AND MASS COMMUNICATION</li>-->
           </ul>
-          <button>Apply Now</button>
+          <a href="apply-now.html" class="apply-now-btn">Apply Now</a>
         </div>
 
         <div id="HND" class="our-programs">
           <p class="amh">HND</p>
           <img src="images/mass-communication.jpg" alt="" /><br />
           <ul>
-            <li><a href="#">COMPUTER ENGINEERING</a></li>
-            <li><a href="#">ELECTRICAL ENGINEERING</a></li>
-            <li><a href="#">MECHANICAL ENGINEERING</a></li>
-            <li><a href="#">CIVIL ENGINEERING</a></li>
-            <li><a href="#">AGRICULTURE</a></li>
-            <li><a href="#">LOGISTICS AND TRANSPORT MANAGEMENT</a></li>
-            <li><a href="#">PROJECT MANAGEMENT</a></li>
-            <li><a href="#">JOURNALISM AND MASS COMMUNICATION</a></li>
+            <li>
+              COMPUTER ENGINEERING
+              <ul class="psl">
+                <!--psl(program sublist)-->
+                <li>Software Enginnering</li>
+                <li>Hardware Maintenance</li>
+              </ul>
+            </li>
+            <li>ELECTRICAL ENGINEERING</li>
+            <li>MECHANICAL ENGINEERING</li>
+            <li>CIVIL ENGINEERING</li>
+            <li>AGRICULTURE</li>
+            <li>LOGISTICS AND TRANSPORT MANAGEMENT</li>
+            <li>PROJECT MANAGEMENT</li>
+            <li>JOURNALISM AND MASS COMMUNICATION</li>
           </ul>
-          <button>Apply Now</button>
+          <a href="apply-now.html" class="apply-now-btn">Apply Now</a>
         </div>
 
         <div id="DEGREE" class="our-programs">
           <p class="amh">DEGREE</p>
           <img src="images/graduation.jpg" alt="" /><br />
           <ul>
-            <li><a href="#">COMPUTER ENGINEERING</a></li>
-            <li><a href="#">ELECTRICAL ENGINEERING</a></li>
-            <li><a href="#">MECHANICAL ENGINEERING</a></li>
-            <li><a href="#">CIVIL ENGINEERING</a></li>
-            <li><a href="#">AGRICULTURE</a></li>
-            <li><a href="#">LOGISTICS AND TRANSPORT MANAGEMENT</a></li>
-            <li><a href="#">PROJECT MANAGEMENT</a></li>
-            <li><a href="#">JOURNALISM AND MASS COMMUNICATION</a></li>
+            <li>
+              COMPUTER ENGINEERING
+              <ul class="psl">
+                <!--psl(program sublist)-->
+                <li>Software Enginnering</li>
+                <li>Hardware Maintenance</li>
+              </ul>
+            </li>
+            <li>ELECTRICAL ENGINEERING</li>
+            <li>MECHANICAL ENGINEERING</li>
+            <li>CIVIL ENGINEERING</li>
+            <li>AGRICULTURE</li>
+            <li>LOGISTICS AND TRANSPORT MANAGEMENT</li>
+            <li>PROJECT MANAGEMENT</li>
+            <li>JOURNALISM AND MASS COMMUNICATION</li>
           </ul>
-          <button>Apply Now</button>
+          <a href="apply-now.html" class="apply-now-btn">Apply Now</a>
         </div>
 
         <div id="MASTERS" class="our-programs">
           <p class="amh">MASTERS</p>
           <img src="images/graduation.jpg" alt="" /><br />
           <ul>
-            <li><a href="#">COMPUTER ENGINEERING</a></li>
-            <li><a href="#">ELECTRICAL ENGINEERING</a></li>
-            <li><a href="#">MECHANICAL ENGINEERING</a></li>
-            <li><a href="#">CIVIL ENGINEERING</a></li>
-            <li><a href="#">AGRICULTURE</a></li>
-            <li><a href="#">LOGISTICS AND TRANSPORT MANAGEMENT</a></li>
-            <li><a href="#">PROJECT MANAGEMENT</a></li>
-            <li><a href="#">JOURNALISM AND MASS COMMUNICATION</a></li>
+            <li>
+              COMPUTER ENGINEERING
+              <ul class="psl">
+                <!--psl(program sublist)-->
+                <li>Software Enginnering</li>
+                <li>Hardware Maintenance</li>
+              </ul>
+            </li>
+            <li>ELECTRICAL ENGINEERING</li>
+            <li>MECHANICAL ENGINEERING</li>
+            <li>CIVIL ENGINEERING</li>
+            <li>AGRICULTURE</li>
+            <li>LOGISTICS AND TRANSPORT MANAGEMENT</li>
+            <li>PROJECT MANAGEMENT</li>
+            <li>JOURNALISM AND MASS COMMUNICATION</li>
           </ul>
-          <button>Apply Now</button>
+          <a href="apply-now.html" class="apply-now-btn">Apply Now</a>
         </div>
       </div>
     </section>
@@ -168,7 +397,7 @@
             <li><a href="programs.html">Our Programs</a></li>
             <li><a href="about-us.html">About Us</a></li>
             <li><a href="scholarship-opportunities.html">Scholarship</a></li>
-            <li><a href="#">News &amp; Updates</a></li>
+            <li><a href="news-updates.html">News &amp; Updates</a></li>
           </ul>
         </div>
 

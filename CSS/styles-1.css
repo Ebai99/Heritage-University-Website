@@ -1,7 +1,7 @@
 .hero {
-  height: 500px;
+  min-height: 500px;
   background-image: conic-gradient(rgba(1, 1, 50, 0.6)),
-    url(/images/hero-bg.jpg);
+    url(/images/hero-bg-modified.jpg);
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -14,7 +14,7 @@
 }
 
 .hero-title {
-  font-family: "Georgia", serif;
+  font-family: "Neuton", "Georgia", serif;
   font-size: 3.75rem;
   font-weight: 600;
   color: rgb(255, 160, 0);
@@ -34,13 +34,59 @@
   box-shadow: 0px 0px 5px rgba(255, 160, 0, 1);
 }
 
+.program-description {
+  background-color: #cccccc;
+  padding: 2% 5%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.program-description h3 {
+  display: inline-block;
+  margin: 1rem 0 0.5rem 0;
+  font-family: "Neuton", Georgia, "Times New Roman", Times, serif;
+  font-size: 1.625rem;
+  color: rgb(1, 1, 50);
+  border-bottom: 2px solid rgba(1, 1, 50, 1);
+}
+
+.HND-program {
+  background-color: #f9f9f9;
+  padding: 1em;
+  line-height: 1.625em;
+  border-radius: 30px;
+  width: 48%;
+}
+
+.degree-masters-program {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.degree-masters-program div {
+  background-color: #f9f9f9;
+  padding: 1em;
+  line-height: 1.625em;
+  border-radius: 30px;
+  flex: 1;
+}
+
+.program-description div ul li {
+  list-style-position: inside;
+  margin-left: 2rem;
+}
+
 .programs {
   margin: 2% 5%;
 }
 
 .programs-intro {
   padding: 10px 20px;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #f9f9f9;
   border-radius: 0px 0px 5px 5px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
   margin-bottom: 10px;
@@ -73,7 +119,6 @@
   width: 23%;
   padding: 0.625rem 1.25rem;
   border-radius: 30px;
-  background-color: rgba(255, 255, 255, 1);
   background-image: linear-gradient(
     #f9f9f9,
     rgba(1, 1, 50, 0.8),
@@ -83,12 +128,13 @@
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
 
-.our-programs .amh {
+.our-programs .amh,
+.program-description .amh {
   color: rgb(255, 160, 0);
   background-color: rgba(1, 1, 50, 1);
-  font-size: 2rem;
+  font-size: 1.75rem;
   padding: 0.625rem;
-  border-radius: 30px;
+  border-radius: 20px;
   text-align: center;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
 }
@@ -99,16 +145,21 @@
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
 
-.our-programs ul li {
+.our-programs ul li:not(.psl li) {
   list-style-type: none;
-  padding: 5px 0px;
-}
-
-.our-programs ul li a {
-  text-decoration: none;
   font-size: 1.125rem;
   color: #f9f9f9;
   display: block;
+  padding: 5px 0px;
+}
+
+.our-programs .psl {
+  margin-left: 2rem;
+}
+
+.our-programs .psl li {
+  color: #f9f9f9a2;
+  list-style-type: disc;
 }
 
 .our-programs button {
@@ -122,7 +173,7 @@
 .about-us h2 {
   margin-bottom: 10px;
   font-size: 2rem;
-  font-family: "Georgia", serif;
+  font-family: "Neuton", "Georgia", serif;
   border-bottom: 2px solid black;
 }
 
@@ -181,6 +232,7 @@
 .our-partners-au {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   gap: 20px;
   flex-wrap: wrap;
   margin-bottom: 30px;
@@ -202,10 +254,6 @@
 }
 
 @media only screen and (max-width: 1260px) {
-  .our-programs .amh {
-    font-size: 2.75vw;
-  }
-
   .our-programs,
   .our-staffs div,
   .culture-boxes {
@@ -219,17 +267,20 @@
   .our-staffs div,
   .culture-boxes,
   .partner-boxes-au {
-    width: 45%;
+    width: 48%;
   }
+}
 
-  .our-programs .amh {
-    font-size: 4.5vh;
+@media screen and (max-width: 810px) {
+  .program-description div {
+    width: 100%;
   }
 }
 
 @media only screen and (max-width: 710px) {
   .hero-title {
     font-size: 3.125rem;
+    letter-spacing: 2px;
     word-spacing: 5px;
   }
 
@@ -238,7 +289,11 @@
     font-size: 1.5rem;
   }
 
-  .our-program,
+  .about-us h2 {
+    font-size: 1.875rem;
+  }
+
+  .our-programs,
   .our-staffs div,
   .culture-boxes {
     width: 100%;
@@ -246,5 +301,27 @@
 
   .partner-boxes-au {
     width: 45%;
+  }
+
+  .partner-boxes-au p {
+    font-size: 0.825rem;
+  }
+
+  .our-programs .amh,
+  .program-description .amh {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .hero-title {
+    font-size: 2.5rem;
+    word-spacing: 2px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .about-us h2 {
+    font-size: 1.5rem;
   }
 }
