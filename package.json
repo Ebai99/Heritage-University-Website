@@ -1,0 +1,30 @@
+{
+  "name": "heritage-university-website",
+  "version": "1.0.0",
+  "description": "Heritage University Website",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ebai99/Heritage-University-Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ebai99/Heritage-University-Website/issues"
+  },
+  "homepage": "https://github.com/Ebai99/Heritage-University-Website#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "express-session": "^1.18.2",
+    "helmet": "^8.1.0",
+    "mongoose": "^8.18.1",
+    "multer": "^2.0.2",
+    "xss-clean": "^0.1.4"
+  }
+}

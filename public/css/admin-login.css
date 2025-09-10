@@ -1,0 +1,57 @@
+/* Admin Login Page Styles */
+.admin-login-container {
+  max-width: 400px;
+  margin: 80px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(1, 1, 50, 0.08);
+  padding: 2rem 2.5rem;
+  font-family: "Poppins", "Manrope", sans-serif;
+}
+.admin-login-title {
+  font-family: "Neuton", serif;
+  font-size: 2rem;
+  color: rgb(1, 1, 50);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  border-bottom: 2px solid rgb(255, 160, 0);
+  padding-bottom: 0.5rem;
+}
+.admin-login-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: rgb(1, 1, 50);
+}
+.admin-login-form input[type="text"],
+.admin-login-form input[type="password"] {
+  width: 100%;
+  padding: 0.7em;
+  margin-bottom: 1.2em;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1em;
+  background: #f9f9f9;
+}
+.admin-login-form button {
+  width: 100%;
+  padding: 0.7em;
+  background: rgb(255, 160, 0);
+  color: #222;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.admin-login-form button:hover {
+  background: rgb(1, 1, 50);
+  color: #fff;
+}
+.login-error {
+  color: #c00;
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 1em;
+}

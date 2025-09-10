@@ -1,11 +1,11 @@
 .hero {
-  min-height: 500px;
+  min-height: 300px;
   background-image: conic-gradient(rgba(1, 1, 50, 0.6)),
-    url(/images/hero-bg-modified.jpg);
+    url(../images/hero-bg-modified.jpg);
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 0 5%;
+  padding: 1em 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,9 +27,9 @@
   display: inline-block;
   width: 580px;
   color: #f9f9f9;
-  font-size: 1.75rem;
   border-radius: 30px;
   padding: 1em;
+  -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
   box-shadow: 0px 0px 5px rgba(255, 160, 0, 1);
 }
@@ -286,7 +286,6 @@
 
   .title-intro {
     width: 100%;
-    font-size: 1.5rem;
   }
 
   .about-us h2 {

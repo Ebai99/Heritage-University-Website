@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Apply Now</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/styles-1.css" />
+    <link rel="stylesheet" href="/css/styles-2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="/js/script.js" defer></script>
+  </head>
+  <body>
+    <!-- HEADER SECTION-->
+
+    <!--First Header-->
+    <div class="first-header">
+      <div class="logo">
+        <h1>HERITAGE <img src="/images/logo.jpg" alt="LOGO" /> UNIVERSITY</h1>
+        <p>HIGHER INSTITUTE OF PEACE AND DEVELOPMENT STUDIES</p>
+      </div>
+      <div class="social-media">
+        <div class="social-media-icons">
+          <a href="#">
+            <span><i class="fa-brands fa-square-facebook"></i></span>
+          </a>
+          <a href="#">
+            <span><i class="fa-brands fa-square-whatsapp"></i></span>
+          </a>
+          <a href="#">
+            <span><i class="fa-brands fa-square-twitter"></i></span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!--Second Header-->
+    <nav class="nav-bar">
+      <input type="checkbox" id="side-bar-check" />
+      <label for="side-bar-check" class="open-side-bar"
+        ><i class="fa-solid fa-bars"></i
+      ></label>
+      <label for="side-bar-check" id="side-bar-overlay"></label>
+      <div class="links-container">
+        <label for="side-bar-check" class="close-side-bar"
+          >X - close menu</label
+        >
+
+        <div class="main-links">
+          <a href="index.html">Home</a>
+          <a href="programs.html">Programs</a>
+          <a href="about-us.html">About Us</a>
+          <a href="scholarship-opportunities.html"
+            >Scholarship&nbsp;<i>&amp;</i>&nbsp;Opportunities</a
+          >
+          <a href="#">News &amp; Updates</a>
+        </div>
+      </div>
+
+      <div class="ac-btn">
+        <a href="apply.ejs" class="apply-now-btn">Apply Now</a>
+
+        <input type="checkbox" id="contact-us-status-active" />
+        <label for="contact-us-status-active" id="contact-us-btn" class="button"
+          >Contact Us</label
+        >
+
+        <label
+          for="contact-us-status-active"
+          class="contact-us-overlay"
+        ></label>
+
+        <div class="contact-form-page">
+          <label for="contact-us-status-active" class="close-contact-us-page"
+            ><i class="fa-solid fa-xmark"></i
+          ></label>
+          <!--send us a message-->
+          <p class="amh">Contact Us</p>
+          <form action="/submit" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <button type="submit" class="button">
+              Send Message on Whatsapp
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="search-bar">
+        <input type="checkbox" id="search-input" />
+        <label for="search-input" class="search-input">search checkbox</label>
+        <input
+          type="search"
+          placeholder="Search Program..."
+          class="search-bar-input"
+        />
+        <label for="search-input" class="searching open-search-bar"
+          ><i class="fa-solid fa-magnifying-glass"></i
+        ></label>
+        <label for="search-input" class="searching close-search-bar"
+          ><i class="fa-solid fa-xmark"></i
+        ></label>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <p class="hero-title">Apply Now</p>
+      <p class="title-intro">
+        We offer a variety of programs to suit the needs of our students. Our
+        programs are designed to provide quality education and practical skills
+        that prepare students for the job market.
+      </p>
+    </section>
+
+    <section class="apply-now-intro">
+      <h2 class="amh">Application Form</h2>
+      <p>
+        Please fill out the form below to apply for admission to Heritage
+        University. Ensure all information is accurate and complete before
+        submission.
+      </p>
+    </section>
+
+    <section class="form-body">
+      <fieldset class="select-program">
+        <legend>Select Program</legend>
+        <label for="hnd" class="active">
+          <input
+            type="radio"
+            id="hnd"
+            name="program-of-studies"
+            onclick="setActiveProgram('hnd', 'HND')"
+            checked
+          />
+          HND </label
+        ><br />
+        <label for="degree">
+          <input
+            type="radio"
+            id="degree"
+            name="program-of-studies"
+            onclick="setActiveProgram('degree', 'bachelor')"
+          />
+          Degree </label
+        ><br />
+        <label for="masters">
+          <input
+            type="radio"
+            id="masters"
+            name="program-of-studies"
+            onclick="setActiveProgram('masters', 'master')"
+          />
+          Masters
+        </label>
+      </fieldset>
+
+      <!-- HND Form -->
+      <form
+        id="HND"
+        class="apply-now-form school-program form-container active"
+        action="/apply"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <!-- Form fields -->
+        <fieldset>
+          <legend>Personal Information</legend>
+          <input
+            type="text"
+            name="First Name"
+            placeholder="First Name"
+            required
+          />
+          <input type="text" name="Middle Name" placeholder="Middle Name" />
+          <input
+            type="text"
+            name="Last Name"
+            placeholder="Last Name"
+            required
+          />
+          <input
+            type="text"
+            name="Date of birth"
+            placeholder="Date of Birth"
+            required
+          />
+          <input
+            type="text"
+            name="Place of birth"
+            placeholder="Place of Birth"
+            required
+          />
+          <input
+            type="text"
+            name="Region of origin"
+            placeholder="Region of Origin"
+            required
+          />
+          <select name="sex" required>
+            <option value="">Select Sex</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+          <input type="email" name="E-Mail" placeholder="Email" required />
+          <input
+            type="text"
+            name="Telephone"
+            placeholder="Telephone"
+            required
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Documents Required for HND</legend>
+          <input type="file" name="birthCertificate" required />
+          <input type="file" name="idCard" required />
+          <input type="file" name="AlevelCertificate" required />
+          <input type="hidden" name="program" value="HND" />
+        </fieldset>
+
+        <div class="form-buttons">
+          <button type="submit" class="button">Submit</button>
+          <button
+            type="button"
+            class="button"
+            onclick="resetProgramSelection()"
+          >
+            Reset
+          </button>
+        </div>
+      </form>
+
+      <!-- Degree Form -->
+      <form
+        id="bachelor"
+        class="apply-now-form school-program form-container"
+        action="/apply"
+        method="POST"
+        enctype="multipart/form-data"
+        style="display: none"
+      >
+        <fieldset>
+          <legend>Personal Information</legend>
+          <input
+            type="text"
+            name="First Name"
+            placeholder="First Name"
+            required
+          />
+          <input type="text" name="Middle Name" placeholder="Middle Name" />
+          <input
+            type="text"
+            name="Last Name"
+            placeholder="Last Name"
+            required
+          />
+          <input
+            type="text"
+            name="Date of birth"
+            placeholder="Date of Birth"
+            required
+          />
+          <input
+            type="text"
+            name="Place of birth"
+            placeholder="Place of Birth"
+            required
+          />
+          <input
+            type="text"
+            name="Region of origin"
+            placeholder="Region of Origin"
+            required
+          />
+          <select name="sex" required>
+            <option value="">Select Sex</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+          <input type="email" name="E-Mail" placeholder="Email" required />
+          <input
+            type="text"
+            name="Telephone"
+            placeholder="Telephone"
+            required
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Documents Required for Bachelor</legend>
+          <input type="file" name="birthCertificate" required />
+          <input type="file" name="idCard" required />
+          <input type="file" name="AlevelCertificate" required />
+          <input type="hidden" name="program" value="bachelor" />
+        </fieldset>
+
+        <div class="form-buttons">
+          <button type="submit" class="button">Submit</button>
+          <button
+            type="button"
+            class="button"
+            onclick="resetProgramSelection()"
+          >
+            Reset
+          </button>
+        </div>
+      </form>
+
+      <!-- Masters Form -->
+      <form
+        id="master"
+        class="apply-now-form school- program form-container"
+        action="/apply"
+        method="POST"
+        enctype="multipart/form-data"
+        style="display: none"
+      >
+        <fieldset>
+          <legend>Personal Information</legend>
+          <input
+            type="text"
+            name="First Name"
+            placeholder="First Name"
+            required
+          />
+          <input type="text" name="Middle Name" placeholder="Middle Name" />
+          <input
+            type="text"
+            name="Last Name"
+            placeholder="Last Name"
+            required
+          />
+          <input
+            type="text"
+            name="Date of birth"
+            placeholder="Date of Birth"
+            required
+          />
+          <input
+            type="text"
+            name="Place of birth"
+            placeholder="Place of Birth"
+            required
+          />
+          <input
+            type="text"
+            name="Region of origin"
+            placeholder="Region of Origin"
+            required
+          />
+          <select name="sex" required>
+            <option value="">Select Sex</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+          <input type="email" name="E-Mail" placeholder="Email" required />
+          <input
+            type="text"
+            name="Telephone"
+            placeholder="Telephone"
+            required
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Documents Required for Masters</legend>
+          <input type="file" name="birthCertificate" required />
+          <input type="file" name="idCard" required />
+          <input type="file" name="AlevelCertificate" required />
+          <input type="hidden" name="program" value="master" />
+        </fieldset>
+
+        <div class="form-buttons">
+          <button type="submit" class="button">Submit</button>
+          <button
+            type="button"
+            class="button"
+            onclick="resetProgramSelection()"
+          >
+            Reset
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <div class="foot">
+        <div class="ending">
+          <p class="article-title">Quick Links</p>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="programs.html">Our Programs</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="scholarship-opportunities.html">Scholarship</a></li>
+            <li><a href="#">News &amp; Updates</a></li>
+          </ul>
+        </div>
+
+        <div class="ending">
+          <p class="article-title">Our Contacts</p>
+          <p>(+237) 677-777-177<br />(+237) 699-009-988</p>
+          <p>
+            Email: <a href="mailto:hehipeds@gmail.com">hehipeds@gmail.com</a>
+          </p>
+        </div>
+
+        <div class="ending">
+          <p class="article-title">Follow Us</p>
+          <p>Facebook: <a href="#">Heritageforpeace</a></p>
+          <p>Twitter: <a href="#">@HeritageUni</a></p>
+          <p>Instagram: <a href="#">@heritage_university</a></p>
+        </div>
+
+        <div class="ending">
+          <p class="article-title">Our Campuses</p>
+          <p>WUM Campus: Opposite the Court of First Instance</p>
+          <p>YAOUNDE Campus: Biyem-Assi, opposite Boulangerie Francaise</p>
+        </div>
+      </div>
+
+      <div class="copyrights">
+        <p>&copy; copyrights reserved 2025</p>
+        <p>Heritage University</p>
+      </div>
+    </footer>
+  </body>
+</html>

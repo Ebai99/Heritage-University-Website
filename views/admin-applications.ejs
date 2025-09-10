@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Admin - Submitted Applications</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/styles-1.css" />
+    <link rel="stylesheet" href="/css/styles-2.css" />
+    <link rel="stylesheet" href="/css/admin-applications.css" />
+  </head>
+  <body>
+    <div class="first-header">
+      <div class="logo">
+        <h1>HERITAGE <img src="/images/logo.jpg" alt="LOGO" /> UNIVERSITY</h1>
+        <p>HIGHER INSTITUTE OF PEACE AND DEVELOPMENT STUDIES</p>
+      </div>
+    </div>
+
+    <div class="learn-more" style="margin: 1em 2em 0 0">
+      <a href="/admin/logout" class="button">Logout</a>
+    </div>
+
+    <div class="admin-table-container">
+      <div class="admin-table-title">Submitted Applications</div>
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Program</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Sex</th>
+            <th>Region</th>
+            <th>Date of Birth</th>
+            <th>Documents</th>
+            <th>Submitted</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% applications.forEach(app => { %>
+          <tr>
+            <td>
+              <%= app.firstName %> <%= app.middleName %> <%= app.lastName %>
+            </td>
+            <td><%= app.program %></td>
+            <td><%= app.email %></td>
+            <td><%= app.phone %></td>
+            <td><%= app.sex %></td>
+            <td><%= app.region %></td>
+            <td><%= app.dob %></td>
+            <td class="doc-links">
+              <% if (app.birthCertificate) { %>
+              <a
+                href="/<%= app.birthCertificate.replace('uploads/', 'uploads/') %>"
+                target="_blank"
+                >Birth Cert</a
+              >
+              <% } %> <% if (app.idCard) { %>
+              <a
+                href="/<%= app.idCard.replace('uploads/', 'uploads/') %>"
+                target="_blank"
+                >ID Card</a
+              >
+              <% } %> <% if (app.AlevelCertificate) { %>
+              <a
+                href="/<%= app.AlevelCertificate.replace('uploads/', 'uploads/') %>"
+                target="_blank"
+                >A Level Cert</a
+              >
+              <% } %>
+            </td>
+            <td><%= app._id.getTimestamp().toLocaleString() %></td>
+          </tr>
+          <% }) %>
+        </tbody>
+      </table>
+      <% if (applications.length === 0) { %>
+      <p style="text-align: center; color: rgb(1, 1, 50); margin-top: 2em">
+        No applications submitted yet.
+      </p>
+      <% } %>
+    </div>
+    <footer>
+      <div class="foot">
+        <div class="ending">
+          <p class="article-title">Quick Links</p>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="programs.html">Our Programs</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="scholarship-opportunities.html">Scholarship</a></li>
+            <li><a href="#">News &amp; Updates</a></li>
+          </ul>
+        </div>
+        <div class="ending">
+          <p class="article-title">Our Contacts</p>
+          <p>(+237) 677-777-177<br />(+237) 699-009-988</p>
+          <p>
+            Email: <a href="mailto:hehipeds@gmail.com">hehipeds@gmail.com</a>
+          </p>
+        </div>
+        <div class="ending">
+          <p class="article-title">Follow Us</p>
+          <p>Facebook: <a href="#">Heritageforpeace</a></p>
+          <p>Twitter: <a href="#">@HeritageUni</a></p>
+          <p>Instagram: <a href="#">@heritage_university</a></p>
+        </div>
+        <div class="ending">
+          <p class="article-title">Our Campuses</p>
+          <p>WUM Campus: Opposite the Court of First Instance</p>
+          <p>YAOUNDE Campus: Biyem-Assi, opposite Boulangerie Francaise</p>
+        </div>
+      </div>
+      <div class="copyrights">
+        <p>&copy; copyrights reserved 2025</p>
+        <p>Heritage University</p>
+      </div>
+    </footer>
+  </body>
+</html>

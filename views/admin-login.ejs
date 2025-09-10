@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Admin Login - Heritage University</title>
+    <link rel="stylesheet" href="/css/admin-login.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/styles-1.css" />
+    <link rel="stylesheet" href="/css/styles-2.css" />
+  </head>
+  <body>
+    <div class="first-header">
+      <div class="logo">
+        <h1>HERITAGE <img src="/images/logo.jpg" alt="LOGO" /> UNIVERSITY</h1>
+        <p>HIGHER INSTITUTE OF PEACE AND DEVELOPMENT STUDIES</p>
+      </div>
+    </div>
+
+    <div class="admin-login-container">
+      <div class="admin-login-title">Admin Login</div>
+      <% if (typeof error !== "undefined" && error) { %>
+      <div class="login-error"><%= error %></div>
+      <% } %>
+      <form class="admin-login-form" method="POST" action="/admin/login">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          required
+          autocomplete="username"
+        />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          autocomplete="current-password"
+        />
+        <button type="submit">Login</button>
+      </form>
+    </div>
+
+    <footer>
+      <div class="foot">
+        <div class="ending">
+          <p class="article-title">Quick Links</p>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="programs.html">Our Programs</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="scholarship-opportunities.html">Scholarship</a></li>
+            <li><a href="#">News &amp; Updates</a></li>
+          </ul>
+        </div>
+        <div class="ending">
+          <p class="article-title">Our Contacts</p>
+          <p>(+237) 677-777-177<br />(+237) 699-009-988</p>
+          <p>
+            Email: <a href="mailto:hehipeds@gmail.com">hehipeds@gmail.com</a>
+          </p>
+        </div>
+        <div class="ending">
+          <p class="article-title">Follow Us</p>
+          <p>Facebook: <a href="#">Heritageforpeace</a></p>
+          <p>Twitter: <a href="#">@HeritageUni</a></p>
+          <p>Instagram: <a href="#">@heritage_university</a></p>
+        </div>
+        <div class="ending">
+          <p class="article-title">Our Campuses</p>
+          <p>WUM Campus: Opposite the Court of First Instance</p>
+          <p>YAOUNDE Campus: Biyem-Assi, opposite Boulangerie Francaise</p>
+        </div>
+      </div>
+      <div class="copyrights">
+        <p>&copy; copyrights reserved 2025</p>
+        <p>Heritage University</p>
+      </div>
+    </footer>
+  </body>
+</html>

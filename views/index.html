@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Heritage University</title>
-    <link rel="stylesheet" href="/CSS/styles.css" />
+    <link rel="stylesheet" href="../public/css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,14 +23,38 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script type="text/javascript" src="../public/js/script.js" defer></script>
   </head>
   <body>
+    <!-- Loading screen -->
+    <div class="loader-container" id="loader">
+      <div class="loader"></div>
+    </div>
+
     <!-- HEADER SECTION-->
 
     <!--First Header-->
     <div class="first-header">
-      <h1>HERITAGE <img src="/images/logo.jpg" alt="LOGO" /> UNIVERSITY</h1>
-      <p>HIGHER INSTITUTE OF PEACE AND DEVELOPMENT STUDIES</p>
+      <div class="logo">
+        <h1>
+          HERITAGE
+          <img src="/../public/images/logo.jpg" alt="LOGO" /> UNIVERSITY
+        </h1>
+        <p>HIGHER INSTITUTE OF PEACE AND DEVELOPMENT STUDIES</p>
+      </div>
+      <div class="social-media">
+        <div class="social-media-icons">
+          <a href="#">
+            <span><i class="fa-brands fa-square-facebook"></i></span>
+          </a>
+          <a href="#">
+            <span><i class="fa-brands fa-square-whatsapp"></i></span>
+          </a>
+          <a href="#">
+            <span><i class="fa-brands fa-square-twitter"></i></span>
+          </a>
+        </div>
+      </div>
     </div>
 
     <!--Second Header-->
@@ -57,7 +81,7 @@
       </div>
 
       <div class="ac-btn">
-        <a href="apply-now.html" class="apply-now-btn">Apply Now</a>
+        <a href="apply.ejs" class="apply-now-btn">Apply Now</a>
 
         <input type="checkbox" id="contact-us-status-active" />
         <label
@@ -68,7 +92,7 @@
         >
 
         <label for="contact-us-status-active" id="contact-us-btn2"
-          ><i class="fa-solid fa-envelope"></i
+          ><i class="fa-solid fa-phone"></i
         ></label>
 
         <label
@@ -101,6 +125,7 @@
 
       <div class="search-bar">
         <input type="checkbox" id="search-input" />
+        <label for="search-input" class="search-input">search checkbox</label>
         <input
           type="search"
           placeholder="Search Program..."
@@ -148,7 +173,10 @@
           <!--welcome intro-->
           <p class="section-title">Welcome to Heritage University</p>
           <div class="wel-img">
-            <img src="/images/founder-macron.jpg" alt="welcome pictures" />
+            <img
+              src="../public/images/founder-macron.jpg"
+              alt="welcome pictures"
+            />
             <p id="img-desc">Our founder with H.E. Emmanuel Macron</p>
           </div>
         </div>
@@ -239,10 +267,10 @@
           </div>
         </div>
         <div class="img">
-          <img src="images/humanitarian-work.jpg" alt="" />
-          <img src="images/mass-communication.jpg" alt="" />
-          <img src="images/one-student-one-laptop.jpg" alt="" />
-          <img src="images/graduation-2.jpg" alt="" />
+          <img src="../public/images/humanitarian-work.jpg" alt="" />
+          <img src="../public/images/mass-communication.jpg" alt="" />
+          <img src="../public/images/one-student-one-laptop.jpg" alt="" />
+          <img src="../public/images/graduation-2.jpg" alt="" />
         </div>
       </section>
     </section>
@@ -255,7 +283,7 @@
           <div class="school-of-eng">
             <!--fos means field of specialization-->
             <div class="software fos">
-              <img src="images/software-img.avif" alt="" />
+              <img src="../public/images/software-img.avif" alt="" />
               <div class="description">
                 <p class="article-title">Software Engineering</p>
                 <p>
@@ -265,7 +293,7 @@
               </div>
             </div>
             <div class="hardware fos">
-              <img src="images/hardware.jpg" alt="" />
+              <img src="../public/images/hardware.jpg" alt="" />
               <div class="description">
                 <p class="article-title">Hardware Engineering</p>
                 <p>
@@ -274,7 +302,7 @@
               </div>
             </div>
             <div class="electrical fos">
-              <img src="images/electrical-img.avif" alt="" />
+              <img src="../public/images/electrical-img.avif" alt="" />
               <div class="description">
                 <p class="article-title">Electrical Engineering</p>
                 <p>
@@ -284,7 +312,7 @@
               </div>
             </div>
             <div class="mechanical fos">
-              <img src="images/mechanical-engineering.jpg" alt="" />
+              <img src="../public/images/mechanical-engineering.jpg" alt="" />
               <div class="description">
                 <p class="article-title">Mechanical Engineering</p>
                 <p>
@@ -294,7 +322,7 @@
               </div>
             </div>
             <div class="civil fos">
-              <img src="images/construction-img.webp" alt="" />
+              <img src="../public/images/construction-img.webp" alt="" />
               <div class="description">
                 <p class="article-title">Civil Engineering</p>
                 <p>
@@ -316,7 +344,7 @@
           <div class="school-of-eng">
             <!--fos means field of specialization-->
             <div class="accounting fos">
-              <img src="images/accounting-pic.jpeg" alt="" />
+              <img src="../public/images/accounting-pic.jpeg" alt="" />
               <div class="description">
                 <p class="article-title">Accounting</p>
                 <p>
@@ -326,7 +354,7 @@
               </div>
             </div>
             <div class="logistics fos">
-              <img src="images/logistic-background.jpg" alt="" />
+              <img src="../public/images/logistic-background.jpg" alt="" />
               <div class="description">
                 <p class="article-title">Logistics and Transport Management</p>
                 <p>
@@ -335,7 +363,7 @@
               </div>
             </div>
             <div class="project-mng fos">
-              <img src="images/logistics-img.avif" alt="" />
+              <img src="../public/images/logistics-img.avif" alt="" />
               <div class="description">
                 <p class="article-title">Project Planning and Management</p>
                 <p>
@@ -345,7 +373,7 @@
               </div>
             </div>
             <div class="journalism fos">
-              <img src="images/journalism.jpg" alt="" />
+              <img src="../public/images/journalism.jpg" alt="" />
               <div class="description">
                 <p class="article-title">Journalism and Mass Communication</p>
                 <p>
@@ -355,7 +383,7 @@
               </div>
             </div>
             <div class="agriculture fos">
-              <img src="images/agri-background.jpg" alt="" />
+              <img src="../public/images/agri-background.jpg" alt="" />
               <div class="description">
                 <p class="article-title">Agriculture</p>
                 <p>
@@ -377,7 +405,7 @@
           <div class="school-of-eng">
             <!--fos means field of specialization-->
             <div class="fos">
-              <img src="images/software-img.avif" alt="" />
+              <img src="../public/images/software-img.avif" alt="" />
               <div class="description">
                 <p class="article-title">Software Engineering</p>
                 <p>
@@ -387,7 +415,7 @@
               </div>
             </div>
             <div class="hardware fos">
-              <img src="images/hardware.jpg" alt="" />
+              <img src="../public/images/hardware.jpg" alt="" />
               <div class="description">
                 <p class="article-title">Hardware Engineering</p>
                 <p>
@@ -396,7 +424,7 @@
               </div>
             </div>
             <div class="electrical fos">
-              <img src="images/electrical-img.avif" alt="" />
+              <img src="../public/images/electrical-img.avif" alt="" />
               <div class="description">
                 <p class="article-title">Electrical Engineering</p>
                 <p>
@@ -406,7 +434,7 @@
               </div>
             </div>
             <div class="mechanical fos">
-              <img src="images/mechanical-engineering.jpg" alt="" />
+              <img src="../public/images/mechanical-engineering.jpg" alt="" />
               <div class="description">
                 <p class="article-title">Mechanical Engineering</p>
                 <p>
@@ -416,7 +444,7 @@
               </div>
             </div>
             <div class="civil fos">
-              <img src="images/construction-img.webp" alt="" />
+              <img src="../public/images/construction-img.webp" alt="" />
               <div class="description">
                 <p class="article-title">Civil Engineering</p>
                 <p>
@@ -438,7 +466,7 @@
           <div class="school-of-eng">
             <!--fos means field of specialization-->
             <div class="software fos">
-              <img src="images/software-img.avif" alt="" />
+              <img src="../public/images/software-img.avif" alt="" />
               <div class="description">
                 <p class="article-title">Software Engineering</p>
                 <p>
@@ -448,7 +476,7 @@
               </div>
             </div>
             <div class="hardware fos">
-              <img src="images/hardware.jpg" alt="" />
+              <img src="../public/images/hardware.jpg" alt="" />
               <div class="description">
                 <p class="article-title">Hardware Engineering</p>
                 <p>
@@ -457,7 +485,7 @@
               </div>
             </div>
             <div class="electrical fos">
-              <img src="images/electrical-img.avif" alt="" />
+              <img src="../public/images/electrical-img.avif" alt="" />
               <div class="description">
                 <p class="article-title">Electrical Engineering</p>
                 <p>
@@ -467,7 +495,7 @@
               </div>
             </div>
             <div class="mechanical fos">
-              <img src="images/mechanical-engineering.jpg" alt="" />
+              <img src="../public/images/mechanical-engineering.jpg" alt="" />
               <div class="description">
                 <p class="article-title">Mechanical Engineering</p>
                 <p>
@@ -477,7 +505,7 @@
               </div>
             </div>
             <div class="civil fos">
-              <img src="images/construction-img.webp" alt="" />
+              <img src="../public/images/construction-img.webp" alt="" />
               <div class="description">
                 <p class="article-title">Civil Engineering</p>
                 <p>
@@ -501,28 +529,28 @@
           <div class="our-partners">
             <div class="partner-boxes">
               <img
-                src="images/Dickinson_College.svg.png"
+                src="../public/images/Dickinson_College.svg.png"
                 alt="One Student One Laptop"
               /><br />
               <p>DICKINSON UNIVERSITY PENYSLAVANIA USA</p>
             </div>
             <div class="partner-boxes">
               <img
-                src="images/UMaroua-logo.png"
+                src="../public/images/UMaroua-logo.png"
                 alt="One Student One Laptop"
               /><br />
               <p>UNIVERSITY OF MAROUA</p>
             </div>
             <div class="partner-boxes">
               <img
-                src="images/UBa-logo.jpg"
+                src="../public/images/UBa-logo.jpg"
                 alt="One Student One Laptop"
               /><br />
               <p>UNIVERSITY OF BAMENDA</p>
             </div>
             <div class="partner-boxes">
               <img
-                src="images/Nico-Halle-logo.png"
+                src="../public/images/Nico-Halle-logo.png"
                 alt="One Student One Laptop"
               /><br />
               <p>NICO-HALLE &amp; CO LAW FIRM</p>
@@ -553,17 +581,17 @@
         <div class="news-body">
           <div class="news-boxes">
             <div class="event-img">
-              <img src="images/background-2.jpg" alt="" />
+              <img src="../public/images/background-2.jpg" alt="" />
             </div>
             <div class="news-headline">
               <p class="article-title">Admission currently going on</p>
               <p>Deadline: 04th September 2025</p>
-              <a href="apply-now.html" class="apply-now-btn">Apply Now</a>
+              <a href="apply.ejs" class="apply-now-btn">Apply Now</a>
             </div>
           </div>
           <div class="news-boxes">
             <div class="event-img">
-              <img src="images/background-2.jpg" alt="" />
+              <img src="../public/images/background-2.jpg" alt="" />
             </div>
             <div class="news-headline">
               <p class="article-title">Heritage Day</p>
@@ -579,7 +607,7 @@
           </div>
           <div class="news-boxes">
             <div class="event-img">
-              <img src="images/humanitarian-work.jpg" alt="" />
+              <img src="../public/images/humanitarian-work.jpg" alt="" />
             </div>
             <div class="news-headline">
               <p class="article-title">Clean-up Campaign</p>
@@ -590,6 +618,20 @@
               </p>
             </div>
           </div>
+        </div>
+
+        <div class="subscribe-newsletter">
+          <p class="amh">Subscribe to our Newsletter</p>
+          <form action="/submit" method="post" class="subscription-form">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <button type="submit" class="button">Subscribe</button>
+          </form>
         </div>
       </div>
     </section>

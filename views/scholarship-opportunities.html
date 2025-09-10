@@ -3,26 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/CSS/styles.css" />
-    <link rel="stylesheet" href="/CSS/styles-1.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="../public/css/styles.css" />
+    <link rel="stylesheet" href="../public/css/styles-1.css" />
     <title>Scholarship and Opportunities</title>
   </head>
   <body>
@@ -30,8 +12,25 @@
 
     <!--First Header-->
     <div class="first-header">
-      <h1>HERITAGE <img src="/images/logo.jpg" alt="LOGO" /> UNIVERSITY</h1>
-      <p>HIGHER INSTITUTE OF PEACE AND DEVELOPMENT STUDIES</p>
+      <div class="logo">
+        <h1>
+          HERITAGE <img src="../public/images/logo.jpg" alt="LOGO" /> UNIVERSITY
+        </h1>
+        <p>HIGHER INSTITUTE OF PEACE AND DEVELOPMENT STUDIES</p>
+      </div>
+      <div class="social-media">
+        <div class="social-media-icons">
+          <a href="#">
+            <span><i class="fa-brands fa-square-facebook"></i></span>
+          </a>
+          <a href="#">
+            <span><i class="fa-brands fa-square-whatsapp"></i></span>
+          </a>
+          <a href="#">
+            <span><i class="fa-brands fa-square-twitter"></i></span>
+          </a>
+        </div>
+      </div>
     </div>
 
     <!--Second Header-->
@@ -53,11 +52,12 @@
           <a class="active" href="scholarship-opportunities.html"
             >Scholarship&nbsp;<i>&amp;</i>&nbsp;Opportunities</a
           >
+          <a href="#">News &amp; Updates</a>
         </div>
       </div>
 
       <div class="ac-btn">
-        <a href="apply-now.html" class="apply-now-btn">Apply Now</a>
+        <a href="apply.ejs" class="apply-now-btn">Apply Now</a>
 
         <input type="checkbox" id="contact-us-status-active" />
         <label for="contact-us-status-active" id="contact-us-btn" class="button"
@@ -94,6 +94,7 @@
 
       <div class="search-bar">
         <input type="checkbox" id="search-input" />
+        <label for="search-input" class="search-input">search checkbox</label>
         <input
           type="search"
           placeholder="Search Program..."

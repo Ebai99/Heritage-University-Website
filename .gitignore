@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Environment
+.env
+.env.*
+
+# Logs
+*.log
+logs/
+
+# Build/coverage
+dist/
+build/
+coverage/
+
+# Generated uploads
+uploads/
+
+# OS/Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
