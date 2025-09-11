@@ -81,7 +81,8 @@
               <form
                 action="/admin/applications/<%= app._id %>/delete"
                 method="POST"
-                onsubmit="return confirm('Delete this application?');"
+                data-applicant="<%= [app.firstName, app.middleName, app.lastName].filter(Boolean).join(' ') %>"
+                onsubmit="return confirm('Delete application for ' + this.dataset.applicant + '? This cannot be undone.');"
               >
                 <button
                   type="submit"
