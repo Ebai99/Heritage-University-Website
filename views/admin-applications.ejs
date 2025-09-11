@@ -16,9 +16,15 @@
       </div>
     </div>
 
-    <div class="learn-more" style="margin: 1em 2em 0 0">
-      <a href="/admin/logout" class="button">Logout</a>
-    </div>
+    <nav class="nav-bar">
+      <div class="links-container">
+        <div class="main-links">
+          <a href="/admin/applications">Applications</a>
+          <a href="#">Dashboard</a>
+          <a href="/admin/logout" class="button">Logout</a>
+        </div>
+      </div>
+    </nav>
 
     <div class="admin-table-container">
       <div class="admin-table-title">Submitted Applications</div>
@@ -34,6 +40,7 @@
             <th>Date of Birth</th>
             <th>Documents</th>
             <th>Submitted</th>
+            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
@@ -70,6 +77,21 @@
               <% } %>
             </td>
             <td><%= app._id.getTimestamp().toLocaleString() %></td>
+            <td>
+              <form
+                action="/admin/applications/<%= app._id %>/delete"
+                method="POST"
+                onsubmit="return confirm('Delete this application?');"
+              >
+                <button
+                  type="submit"
+                  class="button"
+                  style="background: #b00020"
+                >
+                  Delete
+                </button>
+              </form>
+            </td>
           </tr>
           <% }) %>
         </tbody>

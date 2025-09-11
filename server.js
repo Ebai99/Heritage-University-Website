@@ -5,6 +5,7 @@ const path = require("path");
 const helmet = require("helmet");
 const rateLimit = require("express-rate-limit");
 const session = require("express-session");
+require("dotenv").config();
 const app = express();
 
 // Security Middleware
@@ -24,13 +25,9 @@ app.use(limiter);
 
 // MongoDB Connection
 mongoose
-  .connect(
-    "mongodb+srv://HEHIPEDS:HEHIPEDS@heritageuniversitydb.tpryiam.mongodb.net/?retryWrites=true&w=majority&appName=HeritageUniversityDB",
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    }
-  )
+  .connect(process.env.MONGODB_URI, {
+    serverSelectionTimeoutMS: 15000,
+  })
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.error("MongoDB connection error:", err));
 
@@ -62,7 +59,7 @@ const upload = multer({
       );
     }
   },
-  limits: { fileSize: 5 * 1024 * 1024 }, // 5MB max
+  limits: { fileSize: 1 * 1024 * 1024 }, // 1MB max
 });
 
 // MongoDB Schema for Applicants
@@ -212,11 +209,71 @@ app.get("/admin/applications", adminAuth, async (req, res) => {
   }
 });
 
+// Delete application (admin only) and its uploaded files
+app.post("/admin/applications/:id/delete", adminAuth, async (req, res) => {
+  try {
+    const { id } = req.params;
+    const doc = await Applicant.findById(id);
+    if (!doc) {
+      return res.redirect("/admin/applications");
+    }
+
+    // Attempt to remove associated files safely
+    const fs = require("fs");
+    const path = require("path");
+    const uploadDir = path.resolve(process.cwd(), "uploads");
+    const files = [doc.birthCertificate, doc.idCard, doc.AlevelCertificate]
+      .filter(Boolean)
+      .map((p) => path.resolve(process.cwd(), p));
+
+    files.forEach((absPath) => {
+      try {
+        // Ensure file is within uploads directory before deleting
+        if (absPath.startsWith(uploadDir) && fs.existsSync(absPath)) {
+          fs.unlinkSync(absPath);
+        }
+      } catch (e) {
+        console.error("Failed to delete file:", absPath, e);
+      }
+    });
+
+    await Applicant.findByIdAndDelete(id);
+    res.redirect("/admin/applications");
+  } catch (err) {
+    console.error("Error deleting application:", err);
+    res.status(500).send(`Error deleting application: ${err.message}`);
+  }
+});
+
 // Admin logout
 app.get("/admin/logout", (req, res) => {
   req.session.destroy(() => {
     res.redirect("/admin/login");
   });
+});
+
+// Public site routes (serve static HTML pages from views)
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "index.html"));
+});
+
+app.get("/programs", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "programs.html"));
+});
+
+app.get("/about-us", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "about-us.html"));
+});
+
+app.get("/scholarship-opportunities", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "scholarship-opportunities.html"));
+});
+
+// Fallback handler for simple contact/newsletter forms when JS didn't intercept
+app.post("/submit", (req, res) => {
+  // Redirect back to the page the form was submitted from
+  const back = req.get("referer") || "/";
+  res.redirect(back);
 });
 
 app.listen(3000, () => console.log("Server running on port 3000"));

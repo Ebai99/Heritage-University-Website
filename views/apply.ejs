@@ -63,10 +63,10 @@
         >
 
         <div class="main-links">
-          <a href="index.html">Home</a>
-          <a href="programs.html">Programs</a>
-          <a href="about-us.html">About Us</a>
-          <a href="scholarship-opportunities.html"
+          <a href="/">Home</a>
+          <a href="/programs">Programs</a>
+          <a href="/about-us">About Us</a>
+          <a href="/scholarship-opportunities"
             >Scholarship&nbsp;<i>&amp;</i>&nbsp;Opportunities</a
           >
           <a href="#">News &amp; Updates</a>
@@ -74,7 +74,7 @@
       </div>
 
       <div class="ac-btn">
-        <a href="apply.ejs" class="apply-now-btn">Apply Now</a>
+        <a href="/apply" class="apply-now-btn">Apply Now</a>
 
         <input type="checkbox" id="contact-us-status-active" />
         <label for="contact-us-status-active" id="contact-us-btn" class="button"
@@ -162,7 +162,7 @@
             type="radio"
             id="degree"
             name="program-of-studies"
-            onclick="setActiveProgram('degree', 'bachelor')"
+            onclick="setActiveProgram('degree', 'Bachelor')"
           />
           Degree </label
         ><br />
@@ -171,7 +171,7 @@
             type="radio"
             id="masters"
             name="program-of-studies"
-            onclick="setActiveProgram('masters', 'master')"
+            onclick="setActiveProgram('masters', 'Masters')"
           />
           Masters
         </label>
@@ -235,9 +235,38 @@
 
         <fieldset>
           <legend>Documents Required for HND</legend>
-          <input type="file" name="birthCertificate" required />
-          <input type="file" name="idCard" required />
-          <input type="file" name="AlevelCertificate" required />
+          <label for="birthCertificate-HND">Birth Certificate (Max 1MB)</label>
+          <input
+            id="birthCertificate-HND"
+            type="file"
+            name="birthCertificate"
+            accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"
+            required
+          />
+          <small class="file-error" style="color: red"></small>
+
+          <label for="idCard-HND">ID Card (Max 1MB)</label>
+          <input
+            id="idCard-HND"
+            type="file"
+            name="idCard"
+            accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"
+            required
+          />
+          <small class="file-error" style="color: red"></small>
+
+          <label for="AlevelCertificate-HND"
+            >A Level Certificate (Max 1MB)</label
+          >
+          <input
+            id="AlevelCertificate-HND"
+            type="file"
+            name="AlevelCertificate"
+            accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"
+            required
+          />
+          <small class="file-error" style="color: red"></small>
+
           <input type="hidden" name="program" value="HND" />
         </fieldset>
 
@@ -255,7 +284,7 @@
 
       <!-- Degree Form -->
       <form
-        id="bachelor"
+        id="Bachelor"
         class="apply-now-form school-program form-container"
         action="/apply"
         method="POST"
@@ -311,9 +340,40 @@
 
         <fieldset>
           <legend>Documents Required for Bachelor</legend>
-          <input type="file" name="birthCertificate" required />
-          <input type="file" name="idCard" required />
-          <input type="file" name="AlevelCertificate" required />
+          <label for="birthCertificate-bachelor"
+            >Birth Certificate (Max 1MB)</label
+          >
+          <input
+            id="birthCertificate-bachelor"
+            type="file"
+            name="birthCertificate"
+            accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"
+            required
+          />
+          <small class="file-error" style="color: red"></small>
+
+          <label for="idCard-bachelor">ID Card (Max 1MB)</label>
+          <input
+            id="idCard-bachelor"
+            type="file"
+            name="idCard"
+            accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"
+            required
+          />
+          <small class="file-error" style="color: red"></small>
+
+          <label for="AlevelCertificate-bachelor"
+            >A Level Certificate (Max 1MB)</label
+          >
+          <input
+            id="AlevelCertificate-bachelor"
+            type="file"
+            name="AlevelCertificate"
+            accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"
+            required
+          />
+          <small class="file-error" style="color: red"></small>
+
           <input type="hidden" name="program" value="bachelor" />
         </fieldset>
 
@@ -331,7 +391,7 @@
 
       <!-- Masters Form -->
       <form
-        id="master"
+        id="Masters"
         class="apply-now-form school- program form-container"
         action="/apply"
         method="POST"
@@ -387,9 +447,40 @@
 
         <fieldset>
           <legend>Documents Required for Masters</legend>
-          <input type="file" name="birthCertificate" required />
-          <input type="file" name="idCard" required />
-          <input type="file" name="AlevelCertificate" required />
+          <label for="birthCertificate-master"
+            >Birth Certificate (Max 1MB)</label
+          >
+          <input
+            id="birthCertificate-master"
+            type="file"
+            name="birthCertificate"
+            accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"
+            required
+          />
+          <small class="file-error" style="color: red"></small>
+
+          <label for="idCard-master">ID Card (Max 1MB)</label>
+          <input
+            id="idCard-master"
+            type="file"
+            name="idCard"
+            accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"
+            required
+          />
+          <small class="file-error" style="color: red"></small>
+
+          <label for="AlevelCertificate-master"
+            >A Level Certificate (Max 1MB)</label
+          >
+          <input
+            id="AlevelCertificate-master"
+            type="file"
+            name="AlevelCertificate"
+            accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"
+            required
+          />
+          <small class="file-error" style="color: red"></small>
+
           <input type="hidden" name="program" value="master" />
         </fieldset>
 
@@ -411,10 +502,10 @@
         <div class="ending">
           <p class="article-title">Quick Links</p>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="programs.html">Our Programs</a></li>
-            <li><a href="about-us.html">About Us</a></li>
-            <li><a href="scholarship-opportunities.html">Scholarship</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/programs">Our Programs</a></li>
+            <li><a href="/about-us">About Us</a></li>
+            <li><a href="/scholarship-opportunities">Scholarship</a></li>
             <li><a href="#">News &amp; Updates</a></li>
           </ul>
         </div>

@@ -23,8 +23,8 @@ body {
   font-family: "Manrope", "Poppins", sans-serif;
   background-color: #f9f9f9;
   font-size: min(calc(0.8rem + 2vw), 1.25rem);
-  min-height: fit-content;
-  position: relative;
+  /* min-height: fit-content;
+  position: relative; */
 }
 
 /* Styling for the loading screen */
